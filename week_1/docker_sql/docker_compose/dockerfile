@@ -1,0 +1,14 @@
+FROM python:3.9.1
+
+RUN apt-get install wget
+
+# sqlalchemy is pandas package for handling sql, PG_DB WHILE psycopg2 is for handling PG_DB through python
+RUN pip install pandas sqlalchemy psycopg2
+
+WORKDIR /app
+COPY yellow_taxi_tripdataSCRIPT.py yellow_taxi_tripdataSCRIPT.py
+
+ENTRYPOINT ["python", "yellow_taxi_tripdataSCRIPT.py"]
+
+
+
