@@ -52,15 +52,16 @@ services:
 # build the image table
 docker build -t taxi_ingest_image:v001 .
 
+URL="https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2021-01.csv"
 
 docker run -it \
-    --network=docker_compose_default  \
-    taxi_ingest_image:v001 \
-        --user=root \
-        --password=root \
-        --host=pgdatabase \
-        --port=5431 \
-        --db=ny_taxi \
-        --table_name=yellow_taxi_data_table \
-        --url=${URL}
+  --network=docker_compose_default   \
+  taxi_ingest_image:v001 \
+    --user=root \
+    --password=root \
+    --host=pgdatabase \
+    --port=5432 \
+    --db=ny_taxi \
+    --table_name=yellow_taxi_data_table \
+    --url=${URL}
     
