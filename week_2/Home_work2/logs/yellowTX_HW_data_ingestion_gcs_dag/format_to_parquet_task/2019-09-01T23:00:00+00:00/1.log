@@ -1,0 +1,321 @@
+[2022-02-07 11:55:23,541] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yellowTX_HW_data_ingestion_gcs_dag.format_to_parquet_task scheduled__2019-09-01T23:00:00+00:00 [queued]>
+[2022-02-07 11:55:23,557] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yellowTX_HW_data_ingestion_gcs_dag.format_to_parquet_task scheduled__2019-09-01T23:00:00+00:00 [queued]>
+[2022-02-07 11:55:23,557] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-07 11:55:23,557] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-07 11:55:23,557] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-07 11:55:28,117] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2019-09-01 23:00:00+00:00
+[2022-02-07 11:55:28,915] {standard_task_runner.py:52} INFO - Started process 2072 to run task
+[2022-02-07 11:55:28,944] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yellowTX_HW_data_ingestion_gcs_dag', 'format_to_parquet_task', 'scheduled__2019-09-01T23:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/yellowTX_data_ingest_gcs_dag.py', '--cfg-path', '/tmp/tmptx9sqbx8', '--error-file', '/tmp/tmpku5u90dt']
+[2022-02-07 11:55:28,946] {standard_task_runner.py:77} INFO - Job 30: Subtask format_to_parquet_task
+[2022-02-07 11:55:36,391] {logging_mixin.py:109} INFO - Running <TaskInstance: yellowTX_HW_data_ingestion_gcs_dag.format_to_parquet_task scheduled__2019-09-01T23:00:00+00:00 [running]> on host 52b8b55537b2
+[2022-02-07 11:55:38,214] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-07 11:55:43,804] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yellowTX_HW_data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2019-09-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-09-01T23:00:00+00:00
+[2022-02-07 12:07:01,116] {base_job.py:230} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 241, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 220, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2171, in merge
+    _resolve_conflict_map=_resolve_conflict_map,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2244, in _merge
+    merged = self.query(mapper.class_).get(key[1])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 1018, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 1135, in _get_impl
+    return db_load_fn(self, primary_key_identity)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/loading.py", line 286, in load_on_pk_identity
+    return q.one()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3490, in one
+    ret = self.one_or_none()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3459, in one_or_none
+    ret = list(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3557, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3572, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1145, in connection
+    execution_options=execution_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 241, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-02-07 12:08:55,064] {local_task_job.py:142} ERROR - Heartbeat time limit exceeded!
+[2022-02-07 12:09:17,217] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 2072. PIDs of all processes in the group: [2072]
+[2022-02-07 12:09:37,271] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 2072
+[2022-02-07 12:10:36,849] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-02-07 12:10:36,972] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py", line 36, in format_to_parquet
+    pq.write_table(table, src_file.replace('.csv', '.parquet'))
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/parquet.py", line 1987, in write_table
+    writer.write_table(table, row_group_size=row_group_size)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/parquet.py", line 693, in write_table
+    self.writer.write_table(table, row_group_size=row_group_size)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1410, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-02-07 12:10:37,264] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=yellowTX_HW_data_ingestion_gcs_dag, task_id=format_to_parquet_task, execution_date=20190901T230000, start_date=20220207T115523, end_date=20220207T121037
+[2022-02-07 12:10:37,558] {standard_task_runner.py:92} ERROR - Failed to execute job 30 for task format_to_parquet_task
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py", line 36, in format_to_parquet
+    pq.write_table(table, src_file.replace('.csv', '.parquet'))
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/parquet.py", line 1987, in write_table
+    writer.write_table(table, row_group_size=row_group_size)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/parquet.py", line 693, in write_table
+    self.writer.write_table(table, row_group_size=row_group_size)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1410, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-02-07 12:10:37,762] {process_utils.py:70} INFO - Process psutil.Process(pid=2072, status='terminated', exitcode=1, started='11:55:28') (2072) terminated with exit code 1
+[2022-02-07 12:43:58,060] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yellowTX_HW_data_ingestion_gcs_dag.format_to_parquet_task scheduled__2019-09-01T23:00:00+00:00 [queued]>
+[2022-02-07 12:43:58,166] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yellowTX_HW_data_ingestion_gcs_dag.format_to_parquet_task scheduled__2019-09-01T23:00:00+00:00 [queued]>
+[2022-02-07 12:43:58,534] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-07 12:43:58,534] {taskinstance.py:1239} INFO - Starting attempt 1 of 1
+[2022-02-07 12:43:58,534] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-07 12:43:59,189] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2019-09-01 23:00:00+00:00
+[2022-02-07 12:43:59,204] {standard_task_runner.py:52} INFO - Started process 674 to run task
+[2022-02-07 12:43:59,219] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yellowTX_HW_data_ingestion_gcs_dag', 'format_to_parquet_task', 'scheduled__2019-09-01T23:00:00+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/yellowTX_data_ingest_gcs_dag.py', '--cfg-path', '/tmp/tmpsbbrc8aq', '--error-file', '/tmp/tmpktpm5fsl']
+[2022-02-07 12:43:59,221] {standard_task_runner.py:77} INFO - Job 124: Subtask format_to_parquet_task
+[2022-02-07 12:44:00,955] {logging_mixin.py:109} INFO - Running <TaskInstance: yellowTX_HW_data_ingestion_gcs_dag.format_to_parquet_task scheduled__2019-09-01T23:00:00+00:00 [running]> on host 4f748fac91e5
+[2022-02-07 12:44:01,636] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-07 12:44:01,756] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yellowTX_HW_data_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2019-09-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2019-09-01T23:00:00+00:00
+[2022-02-07 13:03:27,521] {base_job.py:230} ERROR - LocalTaskJob heartbeat got an exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 241, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/jobs/base_job.py", line 220, in heartbeat
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2171, in merge
+    _resolve_conflict_map=_resolve_conflict_map,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2244, in _merge
+    merged = self.query(mapper.class_).get(key[1])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 1018, in get
+    return self._get_impl(ident, loading.load_on_pk_identity)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 1135, in _get_impl
+    return db_load_fn(self, primary_key_identity)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/loading.py", line 286, in load_on_pk_identity
+    return q.one()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3490, in one
+    ret = self.one_or_none()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3459, in one_or_none
+    ret = list(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3535, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3557, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3572, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3550, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1145, in connection
+    execution_options=execution_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1151, in _connection_for_bind
+    engine, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 433, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2302, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2340, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1584, in _handle_dbapi_exception_noconnection
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2336, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 364, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 778, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    rec = pool._do_get()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/impl.py", line 241, in _do_get
+    return self._create_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 309, in _create_connection
+    return _ConnectionRecord(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 440, in __init__
+    self.__connect(first_connect_check=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 661, in __connect
+    pool.logger.debug("Error on connect(): %s", e)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    with_traceback=exc_tb,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 182, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 656, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 508, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.7/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: http://sqlalche.me/e/13/e3q8)
+[2022-02-07 13:05:07,832] {local_task_job.py:142} ERROR - Heartbeat time limit exceeded!
+[2022-02-07 13:05:21,099] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 674. PIDs of all processes in the group: [674]
+[2022-02-07 13:05:26,950] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 674
+[2022-02-07 13:07:07,125] {process_utils.py:138} WARNING - process psutil.Process(pid=674, name='airflow task ru', status='sleeping', started='12:43:58') did not respond to SIGTERM. Trying SIGKILL
+[2022-02-07 13:11:29,654] {process_utils.py:75} INFO - Sending the signal Signals.SIGKILL to group 674
+[2022-02-07 13:13:59,959] {process_utils.py:70} INFO - Process psutil.Process(pid=674, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='12:43:58') (674) terminated with exit code Negsignal.SIGKILL
+[2022-02-07 13:13:59,960] {standard_task_runner.py:135} ERROR - Job 124 was killed before it finished (likely due to running out of memory)
