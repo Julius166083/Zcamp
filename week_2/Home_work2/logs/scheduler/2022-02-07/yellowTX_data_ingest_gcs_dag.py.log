@@ -2044,3 +2044,129 @@ sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate
 [2022-02-07 14:18:36,340] {logging_mixin.py:109} INFO - [2022-02-07 14:18:36,339] {dag.py:2396} INFO - Sync 1 DAGs
 [2022-02-07 14:18:36,356] {logging_mixin.py:109} INFO - [2022-02-07 14:18:36,356] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
 [2022-02-07 14:18:36,366] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.971 seconds
+[2022-02-07 14:19:07,232] {processor.py:163} INFO - Started process (PID=1533) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:19:07,235] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:19:07,236] {logging_mixin.py:109} INFO - [2022-02-07 14:19:07,236] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:19:08,091] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:19:08,100] {logging_mixin.py:109} INFO - [2022-02-07 14:19:08,100] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:19:08,118] {logging_mixin.py:109} INFO - [2022-02-07 14:19:08,118] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:19:08,128] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.901 seconds
+[2022-02-07 14:19:38,188] {processor.py:163} INFO - Started process (PID=1567) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:19:38,193] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:19:38,194] {logging_mixin.py:109} INFO - [2022-02-07 14:19:38,194] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:19:39,028] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:19:39,040] {logging_mixin.py:109} INFO - [2022-02-07 14:19:39,039] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:19:39,057] {logging_mixin.py:109} INFO - [2022-02-07 14:19:39,056] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:19:39,066] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.883 seconds
+[2022-02-07 14:20:09,180] {processor.py:163} INFO - Started process (PID=1612) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:20:09,182] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:20:09,183] {logging_mixin.py:109} INFO - [2022-02-07 14:20:09,183] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:20:10,285] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:20:10,300] {logging_mixin.py:109} INFO - [2022-02-07 14:20:10,300] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:20:10,325] {logging_mixin.py:109} INFO - [2022-02-07 14:20:10,325] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:20:10,336] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 1.163 seconds
+[2022-02-07 14:20:40,441] {processor.py:163} INFO - Started process (PID=1645) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:20:40,444] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:20:40,444] {logging_mixin.py:109} INFO - [2022-02-07 14:20:40,444] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:20:41,325] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:20:41,335] {logging_mixin.py:109} INFO - [2022-02-07 14:20:41,335] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:20:41,352] {logging_mixin.py:109} INFO - [2022-02-07 14:20:41,352] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:20:41,362] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.925 seconds
+[2022-02-07 14:21:11,393] {processor.py:163} INFO - Started process (PID=1688) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:21:11,395] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:21:11,396] {logging_mixin.py:109} INFO - [2022-02-07 14:21:11,395] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:21:12,267] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:21:12,277] {logging_mixin.py:109} INFO - [2022-02-07 14:21:12,277] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:21:12,296] {logging_mixin.py:109} INFO - [2022-02-07 14:21:12,296] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:21:12,308] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.921 seconds
+[2022-02-07 14:21:42,389] {processor.py:163} INFO - Started process (PID=1722) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:21:42,392] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:21:42,393] {logging_mixin.py:109} INFO - [2022-02-07 14:21:42,392] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:21:43,259] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:21:43,270] {logging_mixin.py:109} INFO - [2022-02-07 14:21:43,269] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:21:43,287] {logging_mixin.py:109} INFO - [2022-02-07 14:21:43,286] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:21:43,296] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.912 seconds
+[2022-02-07 14:22:13,347] {processor.py:163} INFO - Started process (PID=1756) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:22:13,348] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:22:13,349] {logging_mixin.py:109} INFO - [2022-02-07 14:22:13,349] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:22:14,214] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:22:14,226] {logging_mixin.py:109} INFO - [2022-02-07 14:22:14,225] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:22:14,243] {logging_mixin.py:109} INFO - [2022-02-07 14:22:14,243] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:22:14,253] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.912 seconds
+[2022-02-07 14:22:44,320] {processor.py:163} INFO - Started process (PID=1801) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:22:44,322] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:22:44,323] {logging_mixin.py:109} INFO - [2022-02-07 14:22:44,323] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:22:45,203] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:22:45,213] {logging_mixin.py:109} INFO - [2022-02-07 14:22:45,213] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:22:45,230] {logging_mixin.py:109} INFO - [2022-02-07 14:22:45,230] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:22:45,239] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.925 seconds
+[2022-02-07 14:23:15,283] {processor.py:163} INFO - Started process (PID=1835) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:23:15,285] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:23:15,286] {logging_mixin.py:109} INFO - [2022-02-07 14:23:15,285] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:23:16,144] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:23:16,154] {logging_mixin.py:109} INFO - [2022-02-07 14:23:16,153] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:23:16,170] {logging_mixin.py:109} INFO - [2022-02-07 14:23:16,170] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:23:16,179] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.901 seconds
+[2022-02-07 14:23:46,273] {processor.py:163} INFO - Started process (PID=1880) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:23:46,275] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:23:46,276] {logging_mixin.py:109} INFO - [2022-02-07 14:23:46,276] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:23:47,134] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:23:47,144] {logging_mixin.py:109} INFO - [2022-02-07 14:23:47,143] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:23:47,161] {logging_mixin.py:109} INFO - [2022-02-07 14:23:47,161] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:23:47,171] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.904 seconds
+[2022-02-07 14:24:17,613] {processor.py:163} INFO - Started process (PID=1914) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:24:17,617] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:24:17,618] {logging_mixin.py:109} INFO - [2022-02-07 14:24:17,617] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:24:18,542] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:24:18,553] {logging_mixin.py:109} INFO - [2022-02-07 14:24:18,553] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:24:18,574] {logging_mixin.py:109} INFO - [2022-02-07 14:24:18,574] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:24:18,585] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.977 seconds
+[2022-02-07 14:24:49,264] {processor.py:163} INFO - Started process (PID=1958) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:24:49,265] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:24:49,266] {logging_mixin.py:109} INFO - [2022-02-07 14:24:49,266] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:24:50,203] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:24:50,213] {logging_mixin.py:109} INFO - [2022-02-07 14:24:50,213] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:24:50,231] {logging_mixin.py:109} INFO - [2022-02-07 14:24:50,231] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:24:50,242] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.983 seconds
+[2022-02-07 14:25:20,277] {processor.py:163} INFO - Started process (PID=1995) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:25:20,280] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:25:20,280] {logging_mixin.py:109} INFO - [2022-02-07 14:25:20,280] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:25:21,130] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:25:21,139] {logging_mixin.py:109} INFO - [2022-02-07 14:25:21,138] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:25:21,155] {logging_mixin.py:109} INFO - [2022-02-07 14:25:21,155] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:25:21,165] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.892 seconds
+[2022-02-07 14:25:51,227] {processor.py:163} INFO - Started process (PID=2040) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:25:51,229] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:25:51,230] {logging_mixin.py:109} INFO - [2022-02-07 14:25:51,230] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:25:52,350] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:25:52,360] {logging_mixin.py:109} INFO - [2022-02-07 14:25:52,359] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:25:52,378] {logging_mixin.py:109} INFO - [2022-02-07 14:25:52,377] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:25:52,388] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 1.167 seconds
+[2022-02-07 14:26:22,491] {processor.py:163} INFO - Started process (PID=2076) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:26:22,493] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:26:22,494] {logging_mixin.py:109} INFO - [2022-02-07 14:26:22,494] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:26:23,339] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:26:23,348] {logging_mixin.py:109} INFO - [2022-02-07 14:26:23,348] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:26:23,366] {logging_mixin.py:109} INFO - [2022-02-07 14:26:23,365] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:26:23,376] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.890 seconds
+[2022-02-07 14:26:53,409] {processor.py:163} INFO - Started process (PID=2119) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:26:53,410] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:26:53,411] {logging_mixin.py:109} INFO - [2022-02-07 14:26:53,411] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:26:54,288] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:26:54,298] {logging_mixin.py:109} INFO - [2022-02-07 14:26:54,297] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:26:54,315] {logging_mixin.py:109} INFO - [2022-02-07 14:26:54,315] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:26:54,326] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.922 seconds
+[2022-02-07 14:27:24,374] {processor.py:163} INFO - Started process (PID=2153) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:27:24,376] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:27:24,377] {logging_mixin.py:109} INFO - [2022-02-07 14:27:24,377] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:27:25,322] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:27:25,336] {logging_mixin.py:109} INFO - [2022-02-07 14:27:25,336] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:27:25,357] {logging_mixin.py:109} INFO - [2022-02-07 14:27:25,357] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:27:25,367] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.998 seconds
+[2022-02-07 14:27:55,440] {processor.py:163} INFO - Started process (PID=2198) to work on /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:27:55,442] {processor.py:642} INFO - Processing file /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:27:55,443] {logging_mixin.py:109} INFO - [2022-02-07 14:27:55,443] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:27:56,376] {processor.py:654} INFO - DAG(s) dict_keys(['yellowTX_HW_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py
+[2022-02-07 14:27:56,386] {logging_mixin.py:109} INFO - [2022-02-07 14:27:56,385] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:27:56,403] {logging_mixin.py:109} INFO - [2022-02-07 14:27:56,403] {dag.py:2935} INFO - Setting next_dagrun for yellowTX_HW_data_ingestion_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-07 14:27:56,412] {processor.py:171} INFO - Processing /opt/airflow/dags/yellowTX_data_ingest_gcs_dag.py took 0.978 seconds

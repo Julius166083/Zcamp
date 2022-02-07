@@ -36,3 +36,129 @@
 [2022-02-07 14:18:50,144] {logging_mixin.py:109} INFO - [2022-02-07 14:18:50,144] {dag.py:2396} INFO - Sync 1 DAGs
 [2022-02-07 14:18:50,163] {logging_mixin.py:109} INFO - [2022-02-07 14:18:50,163] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
 [2022-02-07 14:18:50,173] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.902 seconds
+[2022-02-07 14:19:20,197] {processor.py:163} INFO - Started process (PID=1547) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:19:20,200] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:19:20,201] {logging_mixin.py:109} INFO - [2022-02-07 14:19:20,200] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:19:21,091] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:19:21,102] {logging_mixin.py:109} INFO - [2022-02-07 14:19:21,102] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:19:21,120] {logging_mixin.py:109} INFO - [2022-02-07 14:19:21,120] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:19:21,130] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.937 seconds
+[2022-02-07 14:19:51,493] {processor.py:163} INFO - Started process (PID=1581) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:19:51,495] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:19:51,496] {logging_mixin.py:109} INFO - [2022-02-07 14:19:51,496] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:19:52,385] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:19:52,395] {logging_mixin.py:109} INFO - [2022-02-07 14:19:52,395] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:19:52,416] {logging_mixin.py:109} INFO - [2022-02-07 14:19:52,416] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:19:52,426] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.938 seconds
+[2022-02-07 14:20:23,222] {processor.py:163} INFO - Started process (PID=1626) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:20:23,223] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:20:23,224] {logging_mixin.py:109} INFO - [2022-02-07 14:20:23,224] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:20:24,126] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:20:24,135] {logging_mixin.py:109} INFO - [2022-02-07 14:20:24,135] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:20:24,151] {logging_mixin.py:109} INFO - [2022-02-07 14:20:24,151] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:20:24,161] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.944 seconds
+[2022-02-07 14:20:54,420] {processor.py:163} INFO - Started process (PID=1659) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:20:54,422] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:20:54,423] {logging_mixin.py:109} INFO - [2022-02-07 14:20:54,423] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:20:55,278] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:20:55,288] {logging_mixin.py:109} INFO - [2022-02-07 14:20:55,288] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:20:55,306] {logging_mixin.py:109} INFO - [2022-02-07 14:20:55,306] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:20:55,317] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.901 seconds
+[2022-02-07 14:21:25,363] {processor.py:163} INFO - Started process (PID=1702) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:21:25,365] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:21:25,366] {logging_mixin.py:109} INFO - [2022-02-07 14:21:25,365] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:21:26,272] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:21:26,281] {logging_mixin.py:109} INFO - [2022-02-07 14:21:26,281] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:21:26,298] {logging_mixin.py:109} INFO - [2022-02-07 14:21:26,298] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:21:26,308] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.950 seconds
+[2022-02-07 14:21:56,376] {processor.py:163} INFO - Started process (PID=1736) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:21:56,378] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:21:56,379] {logging_mixin.py:109} INFO - [2022-02-07 14:21:56,379] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:21:57,240] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:21:57,250] {logging_mixin.py:109} INFO - [2022-02-07 14:21:57,249] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:21:57,267] {logging_mixin.py:109} INFO - [2022-02-07 14:21:57,266] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:21:57,276] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.906 seconds
+[2022-02-07 14:22:27,310] {processor.py:163} INFO - Started process (PID=1780) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:22:27,311] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:22:27,312] {logging_mixin.py:109} INFO - [2022-02-07 14:22:27,312] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:22:28,207] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:22:28,217] {logging_mixin.py:109} INFO - [2022-02-07 14:22:28,217] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:22:28,237] {logging_mixin.py:109} INFO - [2022-02-07 14:22:28,237] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:22:28,248] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.943 seconds
+[2022-02-07 14:22:58,289] {processor.py:163} INFO - Started process (PID=1816) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:22:58,291] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:22:58,292] {logging_mixin.py:109} INFO - [2022-02-07 14:22:58,292] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:22:59,179] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:22:59,190] {logging_mixin.py:109} INFO - [2022-02-07 14:22:59,189] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:22:59,208] {logging_mixin.py:109} INFO - [2022-02-07 14:22:59,207] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:22:59,220] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.936 seconds
+[2022-02-07 14:23:29,613] {processor.py:163} INFO - Started process (PID=1851) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:23:29,614] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:23:29,615] {logging_mixin.py:109} INFO - [2022-02-07 14:23:29,615] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:23:30,544] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:23:30,553] {logging_mixin.py:109} INFO - [2022-02-07 14:23:30,553] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:23:30,570] {logging_mixin.py:109} INFO - [2022-02-07 14:23:30,570] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:23:30,579] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.971 seconds
+[2022-02-07 14:24:00,644] {processor.py:163} INFO - Started process (PID=1895) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:24:00,650] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:24:00,651] {logging_mixin.py:109} INFO - [2022-02-07 14:24:00,650] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:24:01,505] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:24:01,515] {logging_mixin.py:109} INFO - [2022-02-07 14:24:01,514] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:24:01,533] {logging_mixin.py:109} INFO - [2022-02-07 14:24:01,533] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:24:01,546] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.906 seconds
+[2022-02-07 14:24:31,645] {processor.py:163} INFO - Started process (PID=1929) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:24:31,647] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:24:31,648] {logging_mixin.py:109} INFO - [2022-02-07 14:24:31,648] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:24:32,539] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:24:32,548] {logging_mixin.py:109} INFO - [2022-02-07 14:24:32,548] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:24:32,565] {logging_mixin.py:109} INFO - [2022-02-07 14:24:32,565] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:24:32,575] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.935 seconds
+[2022-02-07 14:25:03,311] {processor.py:163} INFO - Started process (PID=1975) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:25:03,314] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:25:03,315] {logging_mixin.py:109} INFO - [2022-02-07 14:25:03,315] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:25:04,164] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:25:04,174] {logging_mixin.py:109} INFO - [2022-02-07 14:25:04,174] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:25:04,193] {logging_mixin.py:109} INFO - [2022-02-07 14:25:04,193] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:25:04,203] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.897 seconds
+[2022-02-07 14:25:34,358] {processor.py:163} INFO - Started process (PID=2010) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:25:34,361] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:25:34,361] {logging_mixin.py:109} INFO - [2022-02-07 14:25:34,361] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:25:35,210] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:25:35,227] {logging_mixin.py:109} INFO - [2022-02-07 14:25:35,226] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:25:35,245] {logging_mixin.py:109} INFO - [2022-02-07 14:25:35,245] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:25:35,257] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.903 seconds
+[2022-02-07 14:26:05,390] {processor.py:163} INFO - Started process (PID=2056) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:26:05,392] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:26:05,393] {logging_mixin.py:109} INFO - [2022-02-07 14:26:05,393] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:26:06,282] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:26:06,293] {logging_mixin.py:109} INFO - [2022-02-07 14:26:06,293] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:26:06,311] {logging_mixin.py:109} INFO - [2022-02-07 14:26:06,311] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:26:06,320] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.935 seconds
+[2022-02-07 14:26:36,434] {processor.py:163} INFO - Started process (PID=2090) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:26:36,435] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:26:36,436] {logging_mixin.py:109} INFO - [2022-02-07 14:26:36,436] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:26:37,271] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:26:37,281] {logging_mixin.py:109} INFO - [2022-02-07 14:26:37,281] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:26:37,299] {logging_mixin.py:109} INFO - [2022-02-07 14:26:37,299] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:26:37,309] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.879 seconds
+[2022-02-07 14:27:07,380] {processor.py:163} INFO - Started process (PID=2134) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:27:07,382] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:27:07,384] {logging_mixin.py:109} INFO - [2022-02-07 14:27:07,383] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:27:08,265] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:27:08,275] {logging_mixin.py:109} INFO - [2022-02-07 14:27:08,275] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:27:08,292] {logging_mixin.py:109} INFO - [2022-02-07 14:27:08,292] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:27:08,301] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 0.925 seconds
+[2022-02-07 14:27:38,428] {processor.py:163} INFO - Started process (PID=2167) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:27:38,429] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:27:38,430] {logging_mixin.py:109} INFO - [2022-02-07 14:27:38,430] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:27:39,391] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:27:39,401] {logging_mixin.py:109} INFO - [2022-02-07 14:27:39,401] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:27:39,419] {logging_mixin.py:109} INFO - [2022-02-07 14:27:39,419] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:27:39,429] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 1.005 seconds
+[2022-02-07 14:28:09,472] {processor.py:163} INFO - Started process (PID=2213) to work on /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:28:09,485] {processor.py:642} INFO - Processing file /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py for tasks to queue
+[2022-02-07 14:28:09,486] {logging_mixin.py:109} INFO - [2022-02-07 14:28:09,486] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:28:10,435] {processor.py:654} INFO - DAG(s) dict_keys(['taxi_zones_data_ingestion_gcs_dag']) retrieved from /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py
+[2022-02-07 14:28:10,445] {logging_mixin.py:109} INFO - [2022-02-07 14:28:10,444] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-07 14:28:10,462] {logging_mixin.py:109} INFO - [2022-02-07 14:28:10,462] {dag.py:2935} INFO - Setting next_dagrun for taxi_zones_data_ingestion_gcs_dag to 2022-02-06T00:00:00+00:00
+[2022-02-07 14:28:10,472] {processor.py:171} INFO - Processing /opt/airflow/dags/taxi_zones_data_ingest_gcs_dag.py took 1.005 seconds
