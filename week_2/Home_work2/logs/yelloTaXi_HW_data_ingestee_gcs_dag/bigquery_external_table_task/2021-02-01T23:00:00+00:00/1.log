@@ -1,0 +1,50 @@
+[2022-02-09 09:00:19,226] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.bigquery_external_table_task scheduled__2021-02-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:00:19,244] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.bigquery_external_table_task scheduled__2021-02-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:00:19,244] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:00:19,244] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-09 09:00:19,244] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:00:19,263] {taskinstance.py:1259} INFO - Executing <Task(BigQueryCreateExternalTableOperator): bigquery_external_table_task> on 2021-02-01 23:00:00+00:00
+[2022-02-09 09:00:19,271] {standard_task_runner.py:52} INFO - Started process 385 to run task
+[2022-02-09 09:00:19,278] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yelloTaXi_HW_data_ingestee_gcs_dag', 'bigquery_external_table_task', 'scheduled__2021-02-01T23:00:00+00:00', '--job-id', '490', '--raw', '--subdir', 'DAGS_FOLDER/yelloTaXi_data_ingestee_gcs_dag.py', '--cfg-path', '/tmp/tmpzwgcrgbm', '--error-file', '/tmp/tmp5f71uhzt']
+[2022-02-09 09:00:19,279] {standard_task_runner.py:77} INFO - Job 490: Subtask bigquery_external_table_task
+[2022-02-09 09:00:19,360] {logging_mixin.py:109} INFO - Running <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.bigquery_external_table_task scheduled__2021-02-01T23:00:00+00:00 [running]> on host cc021fb126ed
+[2022-02-09 09:00:19,418] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 09:00:19,445] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yelloTaXi_HW_data_ingestee_gcs_dag
+AIRFLOW_CTX_TASK_ID=bigquery_external_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-02-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-02-01T23:00:00+00:00
+[2022-02-09 09:00:19,447] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-02-09 09:00:20,560] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=yelloTaXi_HW_data_ingestee_gcs_dag, task_id=bigquery_external_table_task, execution_date=20210201T230000, start_date=20220209T090019, end_date=20220209T090020
+[2022-02-09 09:00:20,617] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 09:00:20,652] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-02-09 09:15:51,289] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.bigquery_external_table_task scheduled__2021-02-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:15:51,309] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.bigquery_external_table_task scheduled__2021-02-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:15:51,310] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:15:51,310] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-09 09:15:51,310] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:15:51,330] {taskinstance.py:1259} INFO - Executing <Task(BigQueryCreateExternalTableOperator): bigquery_external_table_task> on 2021-02-01 23:00:00+00:00
+[2022-02-09 09:15:51,341] {standard_task_runner.py:52} INFO - Started process 516 to run task
+[2022-02-09 09:15:51,347] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yelloTaXi_HW_data_ingestee_gcs_dag', 'bigquery_external_table_task', 'scheduled__2021-02-01T23:00:00+00:00', '--job-id', '590', '--raw', '--subdir', 'DAGS_FOLDER/yelloTaXi_data_ingesteee_gcs_dag.py', '--cfg-path', '/tmp/tmp3a7pscih', '--error-file', '/tmp/tmpxts7nd83']
+[2022-02-09 09:15:51,348] {standard_task_runner.py:77} INFO - Job 590: Subtask bigquery_external_table_task
+[2022-02-09 09:15:51,437] {logging_mixin.py:109} INFO - Running <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.bigquery_external_table_task scheduled__2021-02-01T23:00:00+00:00 [running]> on host 75953ff4f3d5
+[2022-02-09 09:15:51,496] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 09:15:51,522] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yelloTaXi_HW_data_ingestee_gcs_dag
+AIRFLOW_CTX_TASK_ID=bigquery_external_table_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-02-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-02-01T23:00:00+00:00
+[2022-02-09 09:15:51,524] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2022-02-09 09:15:52,594] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=yelloTaXi_HW_data_ingestee_gcs_dag, task_id=bigquery_external_table_task, execution_date=20210201T230000, start_date=20220209T091551, end_date=20220209T091552
+[2022-02-09 09:15:52,647] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 09:15:52,683] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

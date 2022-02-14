@@ -61,8 +61,8 @@ def upload_to_gcs(bucket, object_name, local_file):
 default_args = {
     "owner": "airflow",
     #"start_date": days_ago(1),
-    #"depends_on_past": False,
-    #"retries": 1,
+    "depends_on_past": False,
+    "retries": 1,
 }
 
 # NOTE: DAG declaration - using a Context Manager (an implicit way)
@@ -70,9 +70,9 @@ with DAG(
     dag_id="FHV_data_HW_ingestion_gcs_dag",
     schedule_interval="0 23 1 * *",
     start_date=datetime(2019, 1, 1),
-    #default_args=default_args,
+    default_args=default_args,
     #catchup=False,
-    #max_active_runs=1,
+    max_active_runs=5,
     tags=['dtc-de'],
 ) as dag:
 

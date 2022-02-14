@@ -1,0 +1,50 @@
+[2022-02-09 09:00:13,130] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.local_to_gcs_task scheduled__2021-03-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:00:13,141] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.local_to_gcs_task scheduled__2021-03-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:00:13,141] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:00:13,142] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-09 09:00:13,142] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:00:13,160] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2021-03-01 23:00:00+00:00
+[2022-02-09 09:00:13,172] {standard_task_runner.py:52} INFO - Started process 379 to run task
+[2022-02-09 09:00:13,185] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yelloTaXi_HW_data_ingestee_gcs_dag', 'local_to_gcs_task', 'scheduled__2021-03-01T23:00:00+00:00', '--job-id', '488', '--raw', '--subdir', 'DAGS_FOLDER/yelloTaXi_data_ingestee_gcs_dag.py', '--cfg-path', '/tmp/tmpy571rig_', '--error-file', '/tmp/tmptds84422']
+[2022-02-09 09:00:13,187] {standard_task_runner.py:77} INFO - Job 488: Subtask local_to_gcs_task
+[2022-02-09 09:00:13,289] {logging_mixin.py:109} INFO - Running <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.local_to_gcs_task scheduled__2021-03-01T23:00:00+00:00 [running]> on host cc021fb126ed
+[2022-02-09 09:00:13,364] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 09:00:13,402] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yelloTaXi_HW_data_ingestee_gcs_dag
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-03-01T23:00:00+00:00
+[2022-02-09 09:00:23,087] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-09 09:00:23,101] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=yelloTaXi_HW_data_ingestee_gcs_dag, task_id=local_to_gcs_task, execution_date=20210301T230000, start_date=20220209T090013, end_date=20220209T090023
+[2022-02-09 09:00:23,155] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 09:00:23,191] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-09 09:15:48,512] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.local_to_gcs_task scheduled__2021-03-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:15:48,530] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.local_to_gcs_task scheduled__2021-03-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:15:48,531] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:15:48,531] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-09 09:15:48,531] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:15:48,553] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): local_to_gcs_task> on 2021-03-01 23:00:00+00:00
+[2022-02-09 09:15:48,561] {standard_task_runner.py:52} INFO - Started process 510 to run task
+[2022-02-09 09:15:48,569] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yelloTaXi_HW_data_ingestee_gcs_dag', 'local_to_gcs_task', 'scheduled__2021-03-01T23:00:00+00:00', '--job-id', '588', '--raw', '--subdir', 'DAGS_FOLDER/yelloTaXi_data_ingesteee_gcs_dag.py', '--cfg-path', '/tmp/tmp40oa55ln', '--error-file', '/tmp/tmpy29v91og']
+[2022-02-09 09:15:48,571] {standard_task_runner.py:77} INFO - Job 588: Subtask local_to_gcs_task
+[2022-02-09 09:15:48,689] {logging_mixin.py:109} INFO - Running <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.local_to_gcs_task scheduled__2021-03-01T23:00:00+00:00 [running]> on host 75953ff4f3d5
+[2022-02-09 09:15:48,764] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 09:15:48,797] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yelloTaXi_HW_data_ingestee_gcs_dag
+AIRFLOW_CTX_TASK_ID=local_to_gcs_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-03-01T23:00:00+00:00
+[2022-02-09 09:15:59,233] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-09 09:15:59,253] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=yelloTaXi_HW_data_ingestee_gcs_dag, task_id=local_to_gcs_task, execution_date=20210301T230000, start_date=20220209T091548, end_date=20220209T091559
+[2022-02-09 09:15:59,317] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 09:15:59,367] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

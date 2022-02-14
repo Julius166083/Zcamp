@@ -1,0 +1,58 @@
+[2022-02-09 08:58:42,907] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.download_dataset_task scheduled__2020-05-01T23:00:00+00:00 [queued]>
+[2022-02-09 08:58:42,960] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.download_dataset_task scheduled__2020-05-01T23:00:00+00:00 [queued]>
+[2022-02-09 08:58:42,961] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 08:58:42,961] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-09 08:58:42,961] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 08:58:43,008] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_dataset_task> on 2020-05-01 23:00:00+00:00
+[2022-02-09 08:58:43,020] {standard_task_runner.py:52} INFO - Started process 84 to run task
+[2022-02-09 08:58:43,056] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yelloTaXi_HW_data_ingestee_gcs_dag', 'download_dataset_task', 'scheduled__2020-05-01T23:00:00+00:00', '--job-id', '445', '--raw', '--subdir', 'DAGS_FOLDER/yelloTaXi_data_ingestee_gcs_dag.py', '--cfg-path', '/tmp/tmpf05q3pem', '--error-file', '/tmp/tmpfbtnq1fh']
+[2022-02-09 08:58:43,058] {standard_task_runner.py:77} INFO - Job 445: Subtask download_dataset_task
+[2022-02-09 08:58:43,396] {logging_mixin.py:109} INFO - Running <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.download_dataset_task scheduled__2020-05-01T23:00:00+00:00 [running]> on host cc021fb126ed
+[2022-02-09 08:58:43,608] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 08:58:43,766] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yelloTaXi_HW_data_ingestee_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_dataset_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-05-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-05-01T23:00:00+00:00
+[2022-02-09 08:58:43,767] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-09 08:58:43,768] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSL https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2020-05.csv > /opt/***/yellow_tripdata_2020-05.csv']
+[2022-02-09 08:58:43,845] {subprocess.py:85} INFO - Output:
+[2022-02-09 08:58:44,783] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-02-09 08:58:44,857] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=yelloTaXi_HW_data_ingestee_gcs_dag, task_id=download_dataset_task, execution_date=20200501T230000, start_date=20220209T085842, end_date=20220209T085844
+[2022-02-09 08:58:44,957] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 08:58:45,095] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-02-09 09:13:51,833] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.download_dataset_task scheduled__2020-05-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:13:51,869] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.download_dataset_task scheduled__2020-05-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:13:51,869] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:13:51,869] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-09 09:13:51,869] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:13:51,894] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_dataset_task> on 2020-05-01 23:00:00+00:00
+[2022-02-09 09:13:51,911] {standard_task_runner.py:52} INFO - Started process 148 to run task
+[2022-02-09 09:13:51,931] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yelloTaXi_HW_data_ingestee_gcs_dag', 'download_dataset_task', 'scheduled__2020-05-01T23:00:00+00:00', '--job-id', '535', '--raw', '--subdir', 'DAGS_FOLDER/yelloTaXi_data_ingesteee_gcs_dag.py', '--cfg-path', '/tmp/tmp6hgjjh9j', '--error-file', '/tmp/tmpsv1trrb3']
+[2022-02-09 09:13:51,935] {standard_task_runner.py:77} INFO - Job 535: Subtask download_dataset_task
+[2022-02-09 09:13:52,089] {logging_mixin.py:109} INFO - Running <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.download_dataset_task scheduled__2020-05-01T23:00:00+00:00 [running]> on host 75953ff4f3d5
+[2022-02-09 09:13:52,159] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 09:13:52,193] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yelloTaXi_HW_data_ingestee_gcs_dag
+AIRFLOW_CTX_TASK_ID=download_dataset_task
+AIRFLOW_CTX_EXECUTION_DATE=2020-05-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2020-05-01T23:00:00+00:00
+[2022-02-09 09:13:52,195] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-09 09:13:52,197] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sSL https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2020-05.csv > /opt/***/yellow_tripdata_2020-05.csv']
+[2022-02-09 09:13:52,220] {subprocess.py:85} INFO - Output:
+[2022-02-09 09:13:52,982] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-02-09 09:13:53,050] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=yelloTaXi_HW_data_ingestee_gcs_dag, task_id=download_dataset_task, execution_date=20200501T230000, start_date=20220209T091351, end_date=20220209T091353
+[2022-02-09 09:13:53,114] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 09:13:53,187] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

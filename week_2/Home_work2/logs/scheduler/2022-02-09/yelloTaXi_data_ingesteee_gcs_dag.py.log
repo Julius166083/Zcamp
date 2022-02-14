@@ -1,0 +1,127 @@
+[2022-02-09 09:07:10,211] {processor.py:163} INFO - Started process (PID=49) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:07:10,226] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:07:10,228] {logging_mixin.py:109} INFO - [2022-02-09 09:07:10,228] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:07:14,580] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:07:16,773] {logging_mixin.py:109} INFO - [2022-02-09 09:07:16,773] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:07:16,835] {logging_mixin.py:109} INFO - [2022-02-09 09:07:16,835] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:07:16,898] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 6.701 seconds
+[2022-02-09 09:07:47,446] {processor.py:163} INFO - Started process (PID=101) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:07:47,453] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:07:47,454] {logging_mixin.py:109} INFO - [2022-02-09 09:07:47,454] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:07:48,429] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:07:48,440] {logging_mixin.py:109} INFO - [2022-02-09 09:07:48,440] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:07:48,462] {logging_mixin.py:109} INFO - [2022-02-09 09:07:48,462] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:07:48,473] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 1.031 seconds
+[2022-02-09 09:08:19,444] {processor.py:163} INFO - Started process (PID=141) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:08:19,445] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:08:19,446] {logging_mixin.py:109} INFO - [2022-02-09 09:08:19,446] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:08:20,302] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:08:20,312] {logging_mixin.py:109} INFO - [2022-02-09 09:08:20,311] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:08:20,330] {logging_mixin.py:109} INFO - [2022-02-09 09:08:20,330] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:08:20,340] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 0.901 seconds
+[2022-02-09 09:08:50,438] {processor.py:163} INFO - Started process (PID=190) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:08:50,440] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:08:50,441] {logging_mixin.py:109} INFO - [2022-02-09 09:08:50,441] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:08:51,347] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:08:51,357] {logging_mixin.py:109} INFO - [2022-02-09 09:08:51,357] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:08:51,376] {logging_mixin.py:109} INFO - [2022-02-09 09:08:51,376] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:08:51,388] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 0.955 seconds
+[2022-02-09 09:09:21,440] {processor.py:163} INFO - Started process (PID=228) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:09:21,442] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:09:21,443] {logging_mixin.py:109} INFO - [2022-02-09 09:09:21,443] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:09:22,444] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:09:22,454] {logging_mixin.py:109} INFO - [2022-02-09 09:09:22,453] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:09:22,471] {logging_mixin.py:109} INFO - [2022-02-09 09:09:22,471] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:09:22,480] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 1.046 seconds
+[2022-02-09 09:09:43,439] {processor.py:163} INFO - Started process (PID=264) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:09:43,441] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:09:43,442] {logging_mixin.py:109} INFO - [2022-02-09 09:09:43,442] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:09:44,355] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:09:44,367] {logging_mixin.py:109} INFO - [2022-02-09 09:09:44,367] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:09:44,384] {logging_mixin.py:109} INFO - [2022-02-09 09:09:44,384] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:09:44,397] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 0.963 seconds
+[2022-02-09 09:10:14,650] {processor.py:163} INFO - Started process (PID=298) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:10:14,653] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:10:14,653] {logging_mixin.py:109} INFO - [2022-02-09 09:10:14,653] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:10:15,589] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:10:15,600] {logging_mixin.py:109} INFO - [2022-02-09 09:10:15,599] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:10:15,615] {logging_mixin.py:109} INFO - [2022-02-09 09:10:15,615] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:10:15,623] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 0.978 seconds
+[2022-02-09 09:12:07,299] {processor.py:163} INFO - Started process (PID=42) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:12:07,315] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:12:07,317] {logging_mixin.py:109} INFO - [2022-02-09 09:12:07,316] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:12:11,182] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:12:11,196] {logging_mixin.py:109} INFO - [2022-02-09 09:12:11,196] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:12:11,235] {logging_mixin.py:109} INFO - [2022-02-09 09:12:11,235] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:12:11,264] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 3.970 seconds
+[2022-02-09 09:12:41,586] {processor.py:163} INFO - Started process (PID=85) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:12:41,592] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:12:41,593] {logging_mixin.py:109} INFO - [2022-02-09 09:12:41,593] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:12:42,829] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:12:42,844] {logging_mixin.py:109} INFO - [2022-02-09 09:12:42,843] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:12:42,871] {logging_mixin.py:109} INFO - [2022-02-09 09:12:42,871] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:12:42,883] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 1.302 seconds
+[2022-02-09 09:13:12,969] {processor.py:163} INFO - Started process (PID=120) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:13:12,970] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:13:12,971] {logging_mixin.py:109} INFO - [2022-02-09 09:13:12,971] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:13:13,880] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:13:13,891] {logging_mixin.py:109} INFO - [2022-02-09 09:13:13,891] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:13:13,911] {logging_mixin.py:109} INFO - [2022-02-09 09:13:13,911] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:13:13,922] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 0.958 seconds
+[2022-02-09 09:13:44,139] {processor.py:163} INFO - Started process (PID=165) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:13:44,144] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:13:44,148] {logging_mixin.py:109} INFO - [2022-02-09 09:13:44,148] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:13:46,345] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:13:46,358] {logging_mixin.py:109} INFO - [2022-02-09 09:13:46,358] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:13:46,383] {logging_mixin.py:109} INFO - [2022-02-09 09:13:46,383] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2020-04-01T23:00:00+00:00
+[2022-02-09 09:13:46,393] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 2.283 seconds
+[2022-02-09 09:14:17,063] {processor.py:163} INFO - Started process (PID=216) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:14:17,066] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:14:17,069] {logging_mixin.py:109} INFO - [2022-02-09 09:14:17,069] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:14:18,744] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:14:18,773] {logging_mixin.py:109} INFO - [2022-02-09 09:14:18,772] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:14:18,819] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 1.770 seconds
+[2022-02-09 09:14:49,038] {processor.py:163} INFO - Started process (PID=268) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:14:49,041] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:14:49,042] {logging_mixin.py:109} INFO - [2022-02-09 09:14:49,042] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:14:50,956] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:14:50,993] {logging_mixin.py:109} INFO - [2022-02-09 09:14:50,993] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:14:51,089] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 2.065 seconds
+[2022-02-09 09:15:21,261] {processor.py:163} INFO - Started process (PID=331) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:15:21,270] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:15:21,271] {logging_mixin.py:109} INFO - [2022-02-09 09:15:21,271] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:15:23,081] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:15:23,102] {logging_mixin.py:109} INFO - [2022-02-09 09:15:23,101] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:15:23,160] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 1.913 seconds
+[2022-02-09 09:15:53,277] {processor.py:163} INFO - Started process (PID=365) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:15:53,279] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:15:53,279] {logging_mixin.py:109} INFO - [2022-02-09 09:15:53,279] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:15:54,211] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:15:54,225] {logging_mixin.py:109} INFO - [2022-02-09 09:15:54,224] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:15:54,253] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 0.982 seconds
+[2022-02-09 09:16:24,420] {processor.py:163} INFO - Started process (PID=409) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:16:24,426] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:16:24,427] {logging_mixin.py:109} INFO - [2022-02-09 09:16:24,427] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:16:25,827] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:16:25,837] {logging_mixin.py:109} INFO - [2022-02-09 09:16:25,836] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:16:25,861] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 1.447 seconds
+[2022-02-09 09:16:55,995] {processor.py:163} INFO - Started process (PID=448) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:16:55,997] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:16:55,998] {logging_mixin.py:109} INFO - [2022-02-09 09:16:55,998] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:16:57,079] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:16:57,093] {logging_mixin.py:109} INFO - [2022-02-09 09:16:57,092] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:16:57,116] {logging_mixin.py:109} INFO - [2022-02-09 09:16:57,116] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2021-08-01T23:00:00+00:00
+[2022-02-09 09:16:57,129] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 1.139 seconds
+[2022-02-09 09:17:24,180] {processor.py:163} INFO - Started process (PID=513) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:17:24,186] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:17:24,188] {logging_mixin.py:109} INFO - [2022-02-09 09:17:24,188] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:17:25,300] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:17:25,907] {logging_mixin.py:109} INFO - [2022-02-09 09:17:25,907] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:17:26,260] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 2.084 seconds
+[2022-02-09 09:17:56,387] {processor.py:163} INFO - Started process (PID=559) to work on /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:17:56,389] {processor.py:642} INFO - Processing file /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py for tasks to queue
+[2022-02-09 09:17:56,390] {logging_mixin.py:109} INFO - [2022-02-09 09:17:56,390] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:17:57,617] {processor.py:654} INFO - DAG(s) dict_keys(['yelloTaXi_HW_data_ingestee_gcs_dag']) retrieved from /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py
+[2022-02-09 09:17:57,633] {logging_mixin.py:109} INFO - [2022-02-09 09:17:57,633] {dag.py:2396} INFO - Sync 1 DAGs
+[2022-02-09 09:17:57,663] {logging_mixin.py:109} INFO - [2022-02-09 09:17:57,663] {dag.py:2935} INFO - Setting next_dagrun for yelloTaXi_HW_data_ingestee_gcs_dag to 2022-02-01T23:00:00+00:00
+[2022-02-09 09:17:57,676] {processor.py:171} INFO - Processing /opt/airflow/dags/yelloTaXi_data_ingesteee_gcs_dag.py took 1.294 seconds

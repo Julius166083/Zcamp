@@ -1,0 +1,25 @@
+[2022-02-09 10:01:43,535] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: FHV_data_HW_ingestion_gcs_dag.format_to_parquet_task manual__2022-02-09T10:01:39.576479+00:00 [queued]>
+[2022-02-09 10:01:43,554] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: FHV_data_HW_ingestion_gcs_dag.format_to_parquet_task manual__2022-02-09T10:01:39.576479+00:00 [queued]>
+[2022-02-09 10:01:43,555] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 10:01:43,555] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-09 10:01:43,555] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 10:01:43,575] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2022-02-09 10:01:39.576479+00:00
+[2022-02-09 10:01:43,583] {standard_task_runner.py:52} INFO - Started process 557 to run task
+[2022-02-09 10:01:43,590] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'FHV_data_HW_ingestion_gcs_dag', 'format_to_parquet_task', 'manual__2022-02-09T10:01:39.576479+00:00', '--job-id', '995', '--raw', '--subdir', 'DAGS_FOLDER/FHV_data_ingest_gcs_dag.py', '--cfg-path', '/tmp/tmpf_143nqt', '--error-file', '/tmp/tmppu7l0oay']
+[2022-02-09 10:01:43,591] {standard_task_runner.py:77} INFO - Job 995: Subtask format_to_parquet_task
+[2022-02-09 10:01:43,672] {logging_mixin.py:109} INFO - Running <TaskInstance: FHV_data_HW_ingestion_gcs_dag.format_to_parquet_task manual__2022-02-09T10:01:39.576479+00:00 [running]> on host 03c3eba9761e
+[2022-02-09 10:01:43,718] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 10:01:43,743] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=FHV_data_HW_ingestion_gcs_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-09T10:01:39.576479+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-09T10:01:39.576479+00:00
+[2022-02-09 10:01:43,893] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-09 10:01:43,906] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=FHV_data_HW_ingestion_gcs_dag, task_id=format_to_parquet_task, execution_date=20220209T100139, start_date=20220209T100143, end_date=20220209T100143
+[2022-02-09 10:01:43,963] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 10:01:44,008] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

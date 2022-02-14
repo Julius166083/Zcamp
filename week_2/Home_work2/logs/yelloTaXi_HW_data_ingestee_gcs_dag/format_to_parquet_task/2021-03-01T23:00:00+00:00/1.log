@@ -1,0 +1,50 @@
+[2022-02-09 09:00:06,942] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.format_to_parquet_task scheduled__2021-03-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:00:06,977] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.format_to_parquet_task scheduled__2021-03-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:00:06,978] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:00:06,978] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-09 09:00:06,978] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:00:07,000] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2021-03-01 23:00:00+00:00
+[2022-02-09 09:00:07,009] {standard_task_runner.py:52} INFO - Started process 351 to run task
+[2022-02-09 09:00:07,021] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yelloTaXi_HW_data_ingestee_gcs_dag', 'format_to_parquet_task', 'scheduled__2021-03-01T23:00:00+00:00', '--job-id', '485', '--raw', '--subdir', 'DAGS_FOLDER/yelloTaXi_data_ingestee_gcs_dag.py', '--cfg-path', '/tmp/tmptphr22za', '--error-file', '/tmp/tmpu4vfsdcz']
+[2022-02-09 09:00:07,023] {standard_task_runner.py:77} INFO - Job 485: Subtask format_to_parquet_task
+[2022-02-09 09:00:07,134] {logging_mixin.py:109} INFO - Running <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.format_to_parquet_task scheduled__2021-03-01T23:00:00+00:00 [running]> on host cc021fb126ed
+[2022-02-09 09:00:07,205] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 09:00:07,247] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yelloTaXi_HW_data_ingestee_gcs_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-03-01T23:00:00+00:00
+[2022-02-09 09:00:11,474] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-09 09:00:11,494] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=yelloTaXi_HW_data_ingestee_gcs_dag, task_id=format_to_parquet_task, execution_date=20210301T230000, start_date=20220209T090006, end_date=20220209T090011
+[2022-02-09 09:00:11,660] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 09:00:11,760] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-02-09 09:15:42,844] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.format_to_parquet_task scheduled__2021-03-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:15:42,857] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.format_to_parquet_task scheduled__2021-03-01T23:00:00+00:00 [queued]>
+[2022-02-09 09:15:42,857] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:15:42,857] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-09 09:15:42,857] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-09 09:15:42,870] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): format_to_parquet_task> on 2021-03-01 23:00:00+00:00
+[2022-02-09 09:15:42,877] {standard_task_runner.py:52} INFO - Started process 483 to run task
+[2022-02-09 09:15:42,884] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'yelloTaXi_HW_data_ingestee_gcs_dag', 'format_to_parquet_task', 'scheduled__2021-03-01T23:00:00+00:00', '--job-id', '586', '--raw', '--subdir', 'DAGS_FOLDER/yelloTaXi_data_ingesteee_gcs_dag.py', '--cfg-path', '/tmp/tmp7rrx9axp', '--error-file', '/tmp/tmpjhur4z5v']
+[2022-02-09 09:15:42,886] {standard_task_runner.py:77} INFO - Job 586: Subtask format_to_parquet_task
+[2022-02-09 09:15:42,968] {logging_mixin.py:109} INFO - Running <TaskInstance: yelloTaXi_HW_data_ingestee_gcs_dag.format_to_parquet_task scheduled__2021-03-01T23:00:00+00:00 [running]> on host 75953ff4f3d5
+[2022-02-09 09:15:43,015] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/context.py:152: AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+  warnings.warn(_create_deprecation_warning(key, self._deprecation_replacements[key]))
+
+[2022-02-09 09:15:43,036] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=yelloTaXi_HW_data_ingestee_gcs_dag
+AIRFLOW_CTX_TASK_ID=format_to_parquet_task
+AIRFLOW_CTX_EXECUTION_DATE=2021-03-01T23:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-03-01T23:00:00+00:00
+[2022-02-09 09:15:45,889] {python.py:175} INFO - Done. Returned value was: None
+[2022-02-09 09:15:45,903] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=yelloTaXi_HW_data_ingestee_gcs_dag, task_id=format_to_parquet_task, execution_date=20210301T230000, start_date=20220209T091542, end_date=20220209T091545
+[2022-02-09 09:15:46,001] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-09 09:15:46,071] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check
