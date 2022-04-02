@@ -8,7 +8,7 @@
       * Thanks
 -----------------------------------------------------------------------------------------------------------------------
 
-### [Background ](https://github.com/Julius166083/Zcamp/tree/master/week_7_project/data_lake_ingestion/dags#:~:text=*-,Background,-*%20Project%20motivation%0A%20%20*%20File)
+### Background
     ** Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands, dataset downloaded
        from kaggle API at link address: (https://www.kaggle.com/datasets/lucabasa/dutch-energy).
 
