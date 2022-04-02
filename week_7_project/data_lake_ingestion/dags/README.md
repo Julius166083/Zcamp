@@ -1,16 +1,18 @@
 ##                                       NETHERLAND ENERGY
 ### Table of contents
+   * Problem statement
    * [Background](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Results%0A%20%20*%20Author%0A%20%20*%20Thanks-,Background,-**%20Background%20about%20the)
    * [Project motivation](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=the%20zipcode%20ranges-,Project%20motivation,-This%20project%20is)
    * [Folder descriptions](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=in%20this%20repository.-,Folder%20description,-The%20project%20is)
      * [Technologies](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=airflow%20DAG%20task-,Technologies,-%3A)
-   * [Dashboard](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Technologies%3A-,Dashboard,-Acknowledgement)
+   * [Results](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Technologies%3A-,Results,-Acknowledgement)
+     * Dashboard & Documentation
    * [Acknowledgements](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Dashboard-,Acknowledgement,-%C2%A9%202022%20GitHub%2C%20Inc)
    
 -----------------------------------------------------------------------------------------------------------------------
-
+### Problem statement
 ### Background
-Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands, dataset downloaded from kaggle API at link address: (https://www.kaggle.com/datasets/lucabasa/dutch-energy).
+Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands, was downloaded from kaggle link address: (https://www.kaggle.com/datasets/lucabasa/dutch-energy).
 
 The energy network of the Netherlands is managed by a few companies. Every year, these companies release on their websites a table with the energy consumption of the areas under their administration. The companies are
        
@@ -77,7 +79,22 @@ The project is covered in this file called *week_7_project* and it consist of 6 
    * Terraform sub-folder: Consists of Readme.md file to guide on execution steps of Terraform scripts(main.tf,              variables.tf). 
    * Data Ingestion folder:consists of airflow & spark files plus elaborated setup steps in respective Readme.md files.
    * [Dutch-energy.zip](https://www.kaggle.com/lucabasa/dutch-energy) to be downloaded by airflow DAG task 
-   * Technologies:
-### Dashboard
-
+   * Technologies:Covers only those used here which include:
+      * Cloud:Google cloud platform (GCP)
+      * containerization: Docker
+      * Data analysis and exploartion: Sql & python
+      * Infrastructure as code (IaC): Terraform
+      * Workflow orchestration: Airflow
+      * Data Wareshouse: BigQuery
+      * Data ingestion: Batch processing: Spark
+      * Visualization: google studio dashboard
+### Results
+##### Dashboard & Documentation
+Google studio tool will be used for visualization
 ### Acknowledgement
+I would like to thank a team of instructors at Data Talk Club (DTC) that have sacrificed time for this community learning off their busy schedules these include:
+      * Alexey Grigorev: [linkedin](https://linkedin.com/in/agrigorev) DTC leader
+      * Sejal Vaidya: [linkedin](https://linkedin.com/in/vaidyasejal)
+      * Ankush Khanna: [linkedin](https://linkedin.com/in/ankushkhanna2)
+      * Victoria Perez Mola: [linkedin](https://www.linkedin.com/in/victoriaperezmola/)
+      
