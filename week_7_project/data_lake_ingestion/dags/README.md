@@ -9,71 +9,70 @@
 -----------------------------------------------------------------------------------------------------------------------
 
 ### Background
-    ** Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands, dataset downloaded
-       from kaggle API at link address: (https://www.kaggle.com/datasets/lucabasa/dutch-energy).
+Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands, dataset downloaded from kaggle API at link address: (https://www.kaggle.com/datasets/lucabasa/dutch-energy).
 
-       The energy network of the Netherlands is managed by a few companies. Every year, these companies release on their websites a table with the energy consumption of the areas under their administration. The companies are
+The energy network of the Netherlands is managed by a few companies. Every year, these companies release on their websites a table with the energy consumption of the areas under their administration. The companies are
        
-       * Enexis
-       * Liander
-       * Stedin
-       * Enduris
-       * Westlandinfra
-       * Rendo
-       * Coteq
-       The data are anonymized by aggregating the Zipcodes so that every entry describes at least 10 connections.
+   * Enexis
+   * Liander
+   * Stedin
+   * Enduris
+   * Westlandinfra
+   * Rendo
+   * Coteq
+   
+The data are anonymized by aggregating the Zipcodes so that every entry describes at least 10 connections.This market is
+not competitive, meaning that the zones are assigned. This means that every year they roughly provide energy to the same zipcodes. Small changes can happen from year to year either for a change of management or for a different aggregation of zipcodes.
        
-       This market is not competitive, meaning that the zones are assigned. This means that every year they roughly provide energy to the same zipcodes. Small changes can happen from year to year either for a change of management or for a different aggregation of zipcodes.
-       
-       Content
-       Every file contains information about groups of zipcodes managed by one of the three companies for a specific year.
-     NB: company of Westlandinfra was not considered in this project exploration by choice.
+#### Content
+Every file contains information about groups of zipcodes managed by one of the three companies for a specific year.
+*NB:* Only for Network administrators of Coteq,Liander, Enexis and Stedin energy companies, were explored in this project.
      
-####      About the 'Electricity' directory
-
-       Every file is from a network administrator from a specific year.
-       The columns in each file are:
+##### Electricity sector
+Every file is from a network administrator from a specific year.
+The columns in each file are:
        
-       * net_manager: code of the regional network manager
-       * purchase_area: code of the area where the energy is purchased
-       * street: Name of the street
-       * zipcode_from and zipcode_to: 2 columns for the range of zipcodes covered, 4 numbers
-         and 2 letters
-       * city: Name of the city
-       * num_connections: Number of connections in the range of zipcodes
-       * delivery_perc: percentage of the net consumption of electricity or gas. The lower, the
-         more energy was given back to the grid (for example if you have solar panels)
-       * perc_of_active_connections: Percentage of active connections in the zipcode range
-       * type_of_connection: principal type of connection in the zipcode range. For electricity 
-         is # fuses X # ampère. For gas is G4, G6, G10, G16, G25
-       * type_conn_perc: percentage of presence of the principal type of connection in the 
-         zipcode range
-       * annual_consume: Annual consume. Kwh for electricity, m3 for gas
-       * annual_consume_lowtarif_perc: Percentage of consume during the low tarif hours. From 10 
-         p.m. to 7 a.m. and during weekends.
-       * smartmeter_perc: percentage of smartmeters in the zipcode ranges
+   * net_manager: code of the regional network manager
+   * purchase_area: code of the area where the energy is purchased
+   * street: Name of the street
+   * zipcode_from and zipcode_to: 2 columns for the range of zipcodes covered, 4 numbers and 2 letters
+   * city: Name of the city
+   * num_connections: Number of connections in the range of zipcodes
+   * delivery_perc: percentage of the net consumption of electricity or gas. The lower, the more energy was given back 
+     to the grid (for example if you have solar panels)
+   * perc_of_active_connections: Percentage of active connections in the zipcode range
+   * type_of_connection: principal type of connection in the zipcode range. For electricity is # fuses X # ampère. For 
+     gas is G4, G6, G10, G16, G25
+   * type_conn_perc: percentage of presence of the principal type of connection in the zipcode range 
+   * annual_consume: Annual consume. Kwh for electricity, m3 for gas
+   * annual_consume_lowtarif_perc: Percentage of consume during the low tarif hours. From 10 
+     p.m. to 7 a.m. and during weekends.
+   * smartmeter_perc: percentage of smartmeters in the zipcode ranges
 
-####      About the 'Gas' directory
-
-       Every file is from a network administrator from a specific year.
-       The columns in each file are:
+##### Gas sector
+Every file is from a network administrator from a specific year.
+The columns in each file are:
        
-       * net_manager: code of the regional network manager
-       * purchase_area: code of the area where the energy is purchased
-       * street: Name of the street
-       * zipcode_from and zipcode_to: 2 columns for the range of zipcodes covered, 4 numbers and
-         2 letters
-       * city: Name of the city
-       * num_connections: Number of connections in the range of zipcodes
-       * delivery_perc: percentage of the net consumption of electricity or gas. The lower, the 
-         more energy was given back to the grid (for example if you have solar panels)
-       * perc_of_active_connections: Percentage of active connections in the zipcode range
-       * type_of_connection: principal type of connection in the zipcode range. For electricity 
-         is # fuses X # ampère. For gas is G4, G6, G10, G16, G25
-       * type_conn_perc: percentage of presence of the principal type of connection in the 
-         zipcode range
-       * annual_consume: Annual consume. Kwh for electricity, m3 for gas
-       * annual_consume_lowtarif_perc: Percentage of consume during the low tarif hours. From 10
-         p.m. to 7 a.m. and during weekends.
-       * smartmeter_perc: percentage of smartmeters in the zipcode ranges
-         
+   * net_manager: code of the regional network manager
+   * purchase_area: code of the area where the energy is purchased
+   * street: Name of the street
+   * zipcode_from and zipcode_to: 2 columns for the range of zipcodes covered, 4 numbers and 2 letters
+   * city: Name of the city
+   * num_connections: Number of connections in the range of zipcodes
+   * delivery_perc: percentage of the net consumption of electricity or gas. The lower, the more energy was given back        to the grid (for example if you have solar panels) 
+   * perc_of_active_connections: Percentage of active connections in the zipcode range
+   * type_of_connection: principal type of connection in the zipcode range. For electricity is # fuses X # ampère. For        gas is G4, G6, G10, G16, G25    
+   * type_conn_perc: percentage of presence of the principal type of connection in the zipcode range  
+   * annual_consume: Annual consume. Kwh for electricity, m3 for gas
+   * annual_consume_lowtarif_perc: Percentage of consume during the low tarif hours. From 10  p.m. to 7 a.m. and during      weekends.
+   * smartmeter_perc: percentage of smartmeters in the zipcode ranges
+
+### Project motivation
+This project is part of Data Talk Club by [Alexey Gregory](https://www.youtube.com/watch?v=bkJZDmreIpA&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb), its a Data Engineering nanodegree programme. The data-set [Dutch Energy](https://www.kaggle.com/lucabasa/dutch-energy)is got from a kaggle website. The direction I took is to investigate the data, find insights, trends and information.The findings are published in a report in this repository.
+
+### Folder description
+The project is covered in this file called *week_7_project* and it consist of 6 subfolders files:
+   * Week_7_project folder: Consists of subfolders including a Readme.md files describing whats going on.
+   * Terraform sub-folder: Consists of Readme.md file to guide on execution steps of Terraform scripts(main.tf,              variables.tf). 
+   * Energy Dutch.ipynb (the python Notebook)
+   * Dataset to be downloade from the https://www.kaggle.com/lucabasa/dutch-energy and saved in same directory as the python notebook. Important: Ensure the downloaded zip file is named: dutch-energy.zip
