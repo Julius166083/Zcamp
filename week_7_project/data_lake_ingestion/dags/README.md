@@ -1,9 +1,17 @@
-
+#####                                       NETHERLAND ENERGY
+#### Table of contents
+      * Background
+      * Project motivation
+      * File descriptions
+      * Results
+      * Author
+      * Thanks
 #### KAGGLE DATASET 
      * Download link: (https://www.kaggle.com/datasets/lucabasa/dutch-energy)
 
-### CONTEXT 
-    ** Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands
+### Background 
+    ** Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands, dataset downloaded
+       from kaggle API at link address: (https://www.kaggle.com/datasets/lucabasa/dutch-energy).
 
        The energy network of the Netherlands is managed by a few companies. Every year, these companies release on their websites a table with the energy consumption of the areas under their administration. The companies are
        
