@@ -2,10 +2,11 @@
 ### Table of contents
    * [Background](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Results%0A%20%20*%20Author%0A%20%20*%20Thanks-,Background,-**%20Background%20about%20the)
    * [Project motivation](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=the%20zipcode%20ranges-,Project%20motivation,-This%20project%20is)
-   * File descriptions
-   * Results
-   * Author
-   * Thanks
+   * [Folder descriptions](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=in%20this%20repository.-,Folder%20description,-The%20project%20is)
+     * Technologies
+   * Dashboard
+   * Acknowledgements
+   
 -----------------------------------------------------------------------------------------------------------------------
 
 ### Background
@@ -76,3 +77,7 @@ The project is covered in this file called *week_7_project* and it consist of 6 
    * Terraform sub-folder: Consists of Readme.md file to guide on execution steps of Terraform scripts(main.tf,              variables.tf). 
    * Data Ingestion folder:consists of airflow & spark files plus elaborated setup steps in respective Readme.md files.
    * [Dutch-energy.zip](https://www.kaggle.com/lucabasa/dutch-energy) to be downloaded by airflow DAG task 
+   * Technologies:
+### Dashboard
+
+### Acknowledgement
