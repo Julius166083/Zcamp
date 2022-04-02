@@ -11,6 +11,12 @@
    
 -----------------------------------------------------------------------------------------------------------------------
 ### Problem statement
+The population of Netherlands according to the [worldbank](https://worldpopulationreview.com/countries/netherlands-population) records is expected to keep growing in numbers upto 2034 
+         ![image](https://user-images.githubusercontent.com/87927403/161374029-fef220ae-6ce3-4b18-931f-60bd5934819b.png)
+         
+         ![image](https://user-images.githubusercontent.com/87927403/161374139-07914922-4a8f-4f0a-84a0-faee1dac36f9.png)
+                [source of images](https://worldpopulationreview.com/countries/netherlands-population) 
+
 ### Background
 Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands, was downloaded from kaggle link address: (https://www.kaggle.com/datasets/lucabasa/dutch-energy).
 
@@ -93,8 +99,8 @@ The project is covered in this file called *week_7_project* and it consist of 6 
 Google studio tool will be used for visualization
 ### Acknowledgement
 I would like to thank a team of instructors at Data Talk Club (DTC) that have sacrificed time for this community learning off their busy schedules these include:
-      * Alexey Grigorev: [linkedin](https://linkedin.com/in/agrigorev) DTC leader
-      * Sejal Vaidya: [linkedin](https://linkedin.com/in/vaidyasejal)
-      * Ankush Khanna: [linkedin](https://linkedin.com/in/ankushkhanna2)
-      * Victoria Perez Mola: [linkedin](https://www.linkedin.com/in/victoriaperezmola/)
+   * Alexey Grigorev: [linkedin](https://linkedin.com/in/agrigorev) DTC leader
+   * Sejal Vaidya: [linkedin](https://linkedin.com/in/vaidyasejal)
+   * Ankush Khanna: [linkedin](https://linkedin.com/in/ankushkhanna2)
+   * Victoria Perez Mola: [linkedin](https://www.linkedin.com/in/victoriaperezmola/)
       
