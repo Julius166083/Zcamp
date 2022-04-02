@@ -74,5 +74,5 @@ This project is part of Data Talk Club by [Alexey Gregory](https://www.youtube.c
 The project is covered in this file called *week_7_project* and it consist of 6 subfolders files:
    * Week_7_project folder: Consists of subfolders including a Readme.md files describing whats going on.
    * Terraform sub-folder: Consists of Readme.md file to guide on execution steps of Terraform scripts(main.tf,              variables.tf). 
-   * Energy Dutch.ipynb (the python Notebook)
-   * Dataset to be downloade from the https://www.kaggle.com/lucabasa/dutch-energy and saved in same directory as the python notebook. Important: Ensure the downloaded zip file is named: dutch-energy.zip
+   * Data Ingestion folder:consists of airflow & spark files plus elaborated setup steps in respective Readme.md files.
+   * [Dutch-energy.zip](https://www.kaggle.com/lucabasa/dutch-energy) to be downloaded by airflow DAG task 
