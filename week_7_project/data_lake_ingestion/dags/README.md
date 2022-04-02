@@ -1,12 +1,12 @@
-##                                       NETHERLAND ENERGY
-### Table of contents
-   * Problem statement
+#                                       NETHERLAND ENERGY
+## Table of contents
+   * [Problem statement](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Acknowledgements-,Problem%20statement,-Background)
    * [Background](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Results%0A%20%20*%20Author%0A%20%20*%20Thanks-,Background,-**%20Background%20about%20the)
    * [Project motivation](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=the%20zipcode%20ranges-,Project%20motivation,-This%20project%20is)
    * [Folder descriptions](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=in%20this%20repository.-,Folder%20description,-The%20project%20is)
      * [Technologies](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=airflow%20DAG%20task-,Technologies,-%3A)
-   * [Results](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Technologies%3A-,Results,-Acknowledgement)
-     * Dashboard & Documentation
+   * [Results](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=google%20studio%20dashboard-,Results,-Dashboard%20%26%20Documentation)
+     * [Dashboard & Documentation](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Results-,Dashboard%20%26%20Documentation,-Google%20studio%20tool)
    * [Acknowledgements](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Dashboard-,Acknowledgement,-%C2%A9%202022%20GitHub%2C%20Inc)
    
 -----------------------------------------------------------------------------------------------------------------------
