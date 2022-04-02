@@ -1,13 +1,12 @@
-#####                                       NETHERLAND ENERGY
-#### Table of contents
+##                                       NETHERLAND ENERGY
+### Table of contents
       * Background
       * Project motivation
       * File descriptions
       * Results
       * Author
       * Thanks
-#### KAGGLE DATASET 
-     * Download link: (https://www.kaggle.com/datasets/lucabasa/dutch-energy)
+-----------------------------------------------------------------------------------------------------------------------
 
 ### Background 
     ** Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands, dataset downloaded
@@ -30,7 +29,7 @@
        Every file contains information about groups of zipcodes managed by one of the three companies for a specific year.
      NB: company of Westlandinfra was not considered in this project exploration by choice.
      
-#      About the 'Electricity' directory
+####      About the 'Electricity' directory
 
        Every file is from a network administrator from a specific year.
        The columns in each file are:
@@ -54,7 +53,7 @@
          p.m. to 7 a.m. and during weekends.
        * smartmeter_perc: percentage of smartmeters in the zipcode ranges
 
-#      About the 'Gas' directory
+####      About the 'Gas' directory
 
        Every file is from a network administrator from a specific year.
        The columns in each file are:
