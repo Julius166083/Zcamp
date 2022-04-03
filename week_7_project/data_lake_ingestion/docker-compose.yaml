@@ -59,20 +59,28 @@ x-airflow-common:
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     AIRFLOW__API__AUTH_BACKEND: 'airflow.api.auth.backend.basic_auth'
     _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow-providers-apache-spark kaggle dbt-bigquery==1.0.0}
-    GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/google_credentials.json
-    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/google_credentials.json'
+    #GOOGLE_APPLICATION_CREDENTIALS: /.google/credentials/data-zoomcamp-338514-61588c697d67.json
+    #AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/.google/credentials/data-zoomcamp-338514-61588c697d67.json'
 
+    GOOGLE_APPLICATION_CREDENTIALS: /home/Dell/.config/gcloud/application_default_credentials.json
+    AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT: 'google-cloud-platform://?extra__google_cloud_platform__key_path=/home/Dell/.config/gcloud/application_default_credentials.json'
+
+    
     # TODO: Please change GCP_PROJECT_ID & GCP_GCS_BUCKET, as per your config
     GCP_PROJECT_ID: 'data-zoomcamp-338514'
     GCP_GCS_BUCKET: 'data_lake_week_7_project_data-zoomcamp-338514'
 
   volumes:
+    #- /home/Dell/.google/credentials/:/.google/credentials
+    #- /home/Dell/.google/credentials/:/home/airflow/.config/gcloud
+    #- /.jupyter:/home/jupyter/.jupyter
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
     - ./plugins:/opt/airflow/plugins
-    - ~/.google/credentials/:/.google/credentials:ro
     - /.kaggle:/home/airflow/.kaggle
     - /home/Dell/.kaggle:/.kaggle
+    - /home/Dell/.config/gcloud/:/home/airflow/.config/gcloud
+    - /home/Dell/Zcamp/week_7_Project/Datalake_ingestion/spark_folder/resources:/usr/local/spark_folder/resources
 
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:
@@ -284,43 +292,65 @@ services:
   ######################################################
 
   jupyterlab:
-    image: andreper/jupyterlab:3.0.0-spark-3.0.0
+    image: jupyter/all-spark-notebook:java-11.0.14
+    command: start-notebook.sh --NotebookApp.token=''      #disable jupyter password prompts
     container_name: jupyterlab
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/home/airflow/.config/gcloud/application_default_credentials.json
     ports:
-      - 8888:8888
-      - 4040:4040
+      - "8888:8888"
+      - "4040-4080:4040-4080"
     volumes:
-      - shared-workspace:/opt/workspace
+      #- shared-workspace:/opt/workspace
+      - shared-workspace:/usr/local/spark_folder/resources
+      - ../spark_folder/resources/energy_project:/usr/local/spark_folder/resources/energy_project
+      - ../spark_folder/resources/jars:/usr/local/spark_folder/resources/jars
+      - /home/Dell/.config/gcloud/:/home/airflow/.config/gcloud
+  
   spark-master:
-    image: andreper/spark-master:3.0.0
+    image: bde2020/spark-master:3.1.1-hadoop3.2-java11
     container_name: spark-master
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/home/airflow/.config/gcloud/application_default_credentials.json
     ports:
-      - 8081:8080
-      - 7077:7077
+      - "8081:8080"
+      - "7077:7077"
     volumes:
-      - shared-workspace:/opt/workspace
+      #- shared-workspace:/opt/workspace
+      - shared-workspace:/usr/local/spark_folder/resources
+      - ../spark_folder/resources:/usr/local/spark_folder/resources
+      - /home/Dell/.config/gcloud/:/home/airflow/.config/gcloud 
+
   spark-worker-1:
-    image: andreper/spark-worker:3.0.0
+    image: bde2020/spark-worker:3.1.1-hadoop3.2-java11
     container_name: spark-worker-1
     environment:
       - SPARK_WORKER_CORES=1
       - SPARK_WORKER_MEMORY=512m
+      - GOOGLE_APPLICATION_CREDENTIALS=/home/airflow/.config/gcloud/application_default_credentials.json
     ports:
-      - 8082:8081
+      - "8082:8081"
     volumes:
-      - shared-workspace:/opt/workspace
+      #- shared-workspace:/opt/workspace
+      - shared-workspace:/usr/local/spark_folder/resources
+      - ../spark_folder/resources:/usr/local/spark_folder/resources
+      - /home/Dell/.config/gcloud/:/home/airflow/.config/gcloud
     depends_on:
       - spark-master
   spark-worker-2:
-    image: andreper/spark-worker:3.0.0
+    image: bde2020/spark-worker:3.1.1-hadoop3.2-java11
     container_name: spark-worker-2
     environment:
       - SPARK_WORKER_CORES=1
       - SPARK_WORKER_MEMORY=512m
+      - GOOGLE_APPLICATION_CREDENTIALS=/home/airflow/.config/gcloud/application_default_credentials.json
     ports:
-      - 8083:8081
+      - "8083:8081"
     volumes:
-      - shared-workspace:/opt/workspace
+      #- shared-workspace:/opt/workspace
+      - shared-workspace:/usr/local/spark_folder/resources
+      - ../spark_folder/resources:/usr/local/spark_folder/resources
+      - /home/Dell/.config/gcloud/:/home/airflow/.config/gcloud
     depends_on:
       - spark-master
 volumes:
