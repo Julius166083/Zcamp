@@ -1,4 +1,6 @@
 ## Spark- Apache Airflow
+Apache Spark is a solution that helps a lot with distributed data processing. To automate this task, a great solution is scheduling these tasks within Apache Airflow.Here shared are the steps i took to make this happen.
+
 #### Content Table
 * [Google Virtual machine instance set-up](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md#:~:text=seting%20up%20google%20VM%20instance)
 * [General conceptual diagram](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md#:~:text=google%20VM%20instance-,General%20conceptual%20diagram,-(A)spark%20%26%20Jupyter)
@@ -7,6 +9,8 @@
 * [Executing Spark Jobs with Apache Airflow](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md#:~:text=webserver%20and%20Scheduler-,Executing%20Spark%20Jobs%20with%20Apache%20Airflow,-%C2%A9%202022%20GitHub%2C%20Inc)
 --------------------------------------------------------------------------------------------------------------------------
 ### seting up google VM instance
+Better google link ahs been shared here
+https://cloud.google.com/compute/docs/instances/create-start-instance
 ### General conceptual diagram
 <img width="628" alt="airfloww" src="https://user-images.githubusercontent.com/87927403/161413601-73b5ab40-6114-4489-8c5f-71e234d1bf57.PNG">   
 
@@ -110,5 +114,52 @@ It consists of the following docker containers that are built in one 'docker-com
    
 * postgres: Postgres database for Airflow metadata and a Test database to test whatever you want
 * airflow-webserver: Airflow webserver and Scheduler
+       
 ### Executing Spark Jobs with Apache Airflow
+Start by creating DAGs in Apache Airflow capable of running Apache Spark jobs
+##### pre-Requisits summary
+       - virtual machine host Apache airflow and spark used is linux ubuntu
+       - configure JAVA_HOME environment, to enable you run spark on airfow using Pythonoperators and BashOperators,
+         If you don’t have java installed, install it in your spark folder (ie ~/spark) with the following commands:
+       
+          sudo apt update
+          wget https://download.java.net/java/GA/jdk11/9/GPL/openjdk-11.0.2_linux-x64_bin.tar.gz
+          - Unpack it:
+
+          tar xzfv openjdk-11.0.2_linux-x64_bin.tar.gz
+          - define JAVA_HOME and add it to PATH:
+
+           export JAVA_HOME="${HOME}/spark/jdk-11.0.2"
+           export PATH="${JAVA_HOME}/bin:${PATH}"
+          - check that it works:
+
+            java --version
+                       Output:
+
+            openjdk 11.0.2 2019-01-15
+            OpenJDK Runtime Environment 18.9 (build 11.0.2+9)
+            OpenJDK 64-Bit Server VM 18.9 (build 11.0.2+9, mixed mode)
+          - Remove the archive:
+
+          - rm openjdk-11.0.2_linux-x64_bin.tar.gz
+       
+       - setup spark and airflow Dockerfile and Docker-compose.yaml file as shown and explained above.
+       - In the DAGs folder under airflow folder create a dag script my case i named it "dag_spark_task.py" where you call a 
+         SparkSubmitOperator ( kindly refer to READMR.md in DAGs folder for detailed explanation about each dag.
+       
+
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
        
