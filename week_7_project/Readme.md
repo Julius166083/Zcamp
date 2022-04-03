@@ -3,7 +3,8 @@
    * [Problem statement](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Acknowledgements-,Problem%20statement,-Background)
    * [Background](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Results%0A%20%20*%20Author%0A%20%20*%20Thanks-,Background,-**%20Background%20about%20the)
    * [Project motivation](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=the%20zipcode%20ranges-,Project%20motivation,-This%20project%20is)
-   * [Folder descriptions](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=in%20this%20repository.-,Folder%20description,-The%20project%20is)
+   * Methodology
+     * README links
      * [Technologies](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=airflow%20DAG%20task-,Technologies,-%3A)
    * [Results](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=google%20studio%20dashboard-,Results,-Dashboard%20%26%20Documentation)
      * [Dashboard & Documentation](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Results-,Dashboard%20%26%20Documentation,-Google%20studio%20tool)
@@ -78,12 +79,12 @@ The columns in each file are:
 
 ### Project motivation
 This project is part of Data Talk Club by [Alexey Gregory](https://www.youtube.com/watch?v=bkJZDmreIpA&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb), its a Data Engineering nanodegree programme. The data-set [Dutch Energy](https://www.kaggle.com/lucabasa/dutch-energy)is got from a kaggle website. The direction I took is to investigate the data, find insights, trends and information.The findings are published in a report in this repository.
-
-### Folder description
-The project is covered in this file called *week_7_project* and it consist of 6 subfolders files:
-   * Week_7_project folder: Consists of subfolders including a Readme.md files describing whats going on.
-   * Terraform sub-folder: Consists of Readme.md file to guide on execution steps of Terraform scripts(main.tf,              variables.tf). 
-   * Data Ingestion folder:consists of airflow & spark files plus elaborated setup steps in respective Readme.md files.
+### Methodology
+This will consist of workings to show how all set objectives were achieved, details of setups are in separate READMD.md file whose links have been shared here bellow
+   * README links
+      - [Terraform & GCP setup](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/Terraform/README.md)
+      - [Spark/Apache-Airflow setup](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md)
+      - [Data lake ingestion](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README2.md)   
    * [Dutch-energy.zip](https://www.kaggle.com/lucabasa/dutch-energy) to be downloaded by airflow DAG task 
    * Technologies:Covers only those used here which include:
       * Cloud:Google cloud platform (GCP)
