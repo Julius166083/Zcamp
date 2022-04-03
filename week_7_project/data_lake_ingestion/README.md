@@ -1,8 +1,9 @@
 # Executing Spark Jobs with Apache Airflow
 ## General conceptual diagram
 
-         ![image](https://user-images.githubusercontent.com/87927403/161413315-09a14146-815f-4bf0-801e-2d95fd499ce1.png)
+       ![image](https://user-images.githubusercontent.com/87927403/161413397-b85bf6c7-188c-4ec9-9e40-8c838c0c7dc0.png)
 
+       
 ## Airflow
 ### Architecture
 ### Set up
