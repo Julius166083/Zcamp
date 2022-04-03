@@ -1,10 +1,12 @@
 ## Spark- Apache Airflow
 #### Content Table
 * Google Virtual machine instance set-up
-* General conceptual diagram
+* [General conceptual diagram]
 * Apache-airflow 
 * Spark & Jupyter notebook
 * Executing Spark Jobs with Apache Airflow
+--------------------------------------------------------------------------------------------------------------------------
+### seting up google VM instance
 ### General conceptual diagram
 <img width="628" alt="airfloww" src="https://user-images.githubusercontent.com/87927403/161413601-73b5ab40-6114-4489-8c5f-71e234d1bf57.PNG">   
 
@@ -108,4 +110,5 @@ It consists of the following docker containers that are built in one 'docker-com
    
 * postgres: Postgres database for Airflow metadata and a Test database to test whatever you want
 * airflow-webserver: Airflow webserver and Scheduler
-* 
+### Executing Spark Jobs with Apache Airflow
+       
