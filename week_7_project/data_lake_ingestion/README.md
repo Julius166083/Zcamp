@@ -15,7 +15,6 @@ https://cloud.google.com/compute/docs/instances/create-start-instance
 <img width="628" alt="airfloww" src="https://user-images.githubusercontent.com/87927403/161413601-73b5ab40-6114-4489-8c5f-71e234d1bf57.PNG">   
 
 ### (A)spark & Jupyter notebook
-#### Pre-Requisits
 #### spark set-up
 Set up spark and jupyter notebook image configurations as shown appended in my docker-compose.yaml file. In this file spark docker containers were set up
 as follows
@@ -42,7 +41,6 @@ https://hub.docker.com/r/jupyter/all-spark-notebook
 
 
 ### (B)Apache Airflow
-##### Pre-Reqs
 To be consistent, rename your gcp-service-accounts-credentials file to google_credentials.json & store it in your $HOME directory
 
     cd ~ && mkdir -p ~/.google/credentials/
