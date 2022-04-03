@@ -1,10 +1,10 @@
 ## Spark- Apache Airflow
 #### Content Table
-* Google Virtual machine instance set-up
-* [General conceptual diagram]
-* Apache-airflow 
-* Spark & Jupyter notebook
-* Executing Spark Jobs with Apache Airflow
+* [Google Virtual machine instance set-up](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md#:~:text=seting%20up%20google%20VM%20instance)
+* [General conceptual diagram](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md#:~:text=google%20VM%20instance-,General%20conceptual%20diagram,-(A)spark%20%26%20Jupyter)
+* [Apache-airflow ](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md#:~:text=all%2Dspark%2Dnotebook-,(B)Apache%20Airflow,-Pre%2DReqs)
+* [Spark & Jupyter notebook](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md#:~:text=(A)spark%20%26%20Jupyter%20notebook)
+* [Executing Spark Jobs with Apache Airflow](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md#:~:text=webserver%20and%20Scheduler-,Executing%20Spark%20Jobs%20with%20Apache%20Airflow,-%C2%A9%202022%20GitHub%2C%20Inc)
 --------------------------------------------------------------------------------------------------------------------------
 ### seting up google VM instance
 ### General conceptual diagram
