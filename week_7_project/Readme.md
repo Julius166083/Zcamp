@@ -4,6 +4,7 @@
    * [Background](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Results%0A%20%20*%20Author%0A%20%20*%20Thanks-,Background,-**%20Background%20about%20the)
    * [Project motivation](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=the%20zipcode%20ranges-,Project%20motivation,-This%20project%20is)
    * Methodology
+     * Clone project
      * README links
      * [Technologies](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=airflow%20DAG%20task-,Technologies,-%3A)
    * [Results](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=google%20studio%20dashboard-,Results,-Dashboard%20%26%20Documentation)
@@ -81,6 +82,10 @@ The columns in each file are:
 This project is part of Data Talk Club by [Alexey Gregory](https://www.youtube.com/watch?v=bkJZDmreIpA&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb), its a Data Engineering nanodegree programme. The data-set [Dutch Energy](https://www.kaggle.com/lucabasa/dutch-energy)is got from a kaggle website. The direction I took is to investigate the data, find insights, trends and information.The findings are published in a report in this repository.
 ### Methodology
 This will consist of workings to show how all set objectives were achieved, details of setups are in separate READMD.md file whose links have been shared here bellow
+   * Clone project: use the link shared bellow, then head for "week_7_project" folder to access all details about this project
+   
+                    git clone https://github.com/Julius166083/Zcamp.git
+         
    * README links
       - [Terraform & GCP setup](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/Terraform/README.md)
       - [Spark/Apache-Airflow setup](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md)
