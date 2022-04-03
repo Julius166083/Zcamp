@@ -9,7 +9,7 @@ Apache Spark is a solution that helps a lot with distributed data processing. To
 * [Executing Spark Jobs with Apache Airflow](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/README.md#:~:text=webserver%20and%20Scheduler-,Executing%20Spark%20Jobs%20with%20Apache%20Airflow,-%C2%A9%202022%20GitHub%2C%20Inc)
 --------------------------------------------------------------------------------------------------------------------------
 ### seting up google VM instance
-Better google link ahs been shared here
+Better google link for virtual machine set up been shared here
 https://cloud.google.com/compute/docs/instances/create-start-instance
 ### General conceptual diagram
 <img width="628" alt="airfloww" src="https://user-images.githubusercontent.com/87927403/161413601-73b5ab40-6114-4489-8c5f-71e234d1bf57.PNG">   
