@@ -36,7 +36,7 @@ The energy network of the Netherlands is managed by a few companies. Every year,
 The data are anonymized by aggregating the Zipcodes so that every entry describes at least 10 connections.This market is
 not competitive, meaning that the zones are assigned. This means that every year they roughly provide energy to the same zipcodes. Small changes can happen from year to year either for a change of management or for a different aggregation of zipcodes.
        
-#### Content
+#### Context
 Every file contains information about groups of zipcodes managed by one of the three companies for a specific year.
 *NB:* Only for Network administrators of Coteq,Liander, Enexis and Stedin energy companies, were explored in this project.
      
