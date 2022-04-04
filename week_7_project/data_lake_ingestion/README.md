@@ -45,11 +45,12 @@ Installing additional support packages, use one ot the following approaches
 shown in my repo.
 * You can directly put the additional packeages to install in the Dockerfile, like shown in my Dockerfile
 
-    ADD https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar $SPARK_HOME/jars
-    RUN chmod 774 $SPARK_HOME/jars/gcs-connector-hadoop3-latest.jar
+           ADD https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar $SPARK_HOME/jars
+           RUN chmod 774 $SPARK_HOME/jars/gcs-connector-hadoop3-latest.jar
+    
 * use the _PIP_ADDITIONAL_REQUIREMENTS: feature in docker-compose.yaml file to list support packages to be installed as shown 
 
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow-providers-apache-spark kaggle dbt-
+      _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow-providers-apache-spark kaggle dbt-
     bigquery==1.0.0}
     
 * usefull links for these packages include;
@@ -115,14 +116,16 @@ shown in my repo.
              docker-compose down --remove-orphans
              
 * Accessing spark , airflow and jupyter, if your on a local machine access their GUIs at 
-        Jupyter : https://localhost:8888
-        Spark   :https://localhost:8081
-        Airflow : https://localhost:8080
+                Jupyter : https://localhost:8888
+                Spark   :https://localhost:8081
+                Airflow : https://localhost:8080
+        
   If your using a google remote VM instance, do prot forwarding in visual studio, go to the terminal tab, click new terminal
   and when it opens up click, ports tab and then add ports to forward traffic to, thereafter access the services locally.
-       Jupyter : https://localhost:8888
-        Spark   :https://localhost:8081
-        Airflow : https://localhost:8080, password=airflow, username=airflow
+  
+              Jupyter : https://localhost:8888
+              Spark   :https://localhost:8081
+             Airflow : https://localhost:8080, password=airflow, username=airflow
 
 ##### troubleshooting Problems
 "File /.google/credentials/google_credentials.json was not found"
