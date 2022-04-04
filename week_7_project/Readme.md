@@ -17,7 +17,7 @@ Energy is at centre of growth, developement and human survival.The population of
          ![image](https://user-images.githubusercontent.com/87927403/161374029-fef220ae-6ce3-4b18-931f-60bd5934819b.png)
          
          
-                [source of images](https://worldpopulationreview.com/countries/netherlands-population) 
+               
 
 
 ### Background
