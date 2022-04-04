@@ -19,6 +19,7 @@ Energy is at centre of growth, developement and human survival.The population of
          
                 [source of images](https://worldpopulationreview.com/countries/netherlands-population) 
 
+
 ### Background
 Background about the 'Energy (Electricity and Gas) consumption dataset' of the Netherlands, was downloaded from kaggle link address: (https://www.kaggle.com/datasets/lucabasa/dutch-energy).
 
