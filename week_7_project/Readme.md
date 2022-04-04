@@ -8,7 +8,7 @@
      * README links
      * [Technologies](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=airflow%20DAG%20task-,Technologies,-%3A)
    * [Results](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/Readme.md#:~:text=google%20studio%20dashboard-,Results,-Dashboard%20%26%20Documentation)
-     * [Dashboard & Documentation](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Results-,Dashboard%20%26%20Documentation,-Google%20studio%20tool)
+     * [Dashboard & Documentation](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/Readme.md#:~:text=Results-,Dashboard%20%26%20Documentation,-Google%20studio%20tool)
    * [Acknowledgements](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/dags/README.md#:~:text=Dashboard-,Acknowledgement,-%C2%A9%202022%20GitHub%2C%20Inc)
    
 -----------------------------------------------------------------------------------------------------------------------
