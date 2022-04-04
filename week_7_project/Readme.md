@@ -103,7 +103,7 @@ This will consist of workings to show how all set objectives were achieved, deta
       * Visualization: google studio dashboard
 ### Results
 ##### Dashboard & Documentation
-Google studio tool will be used for visualization
+[Google studio tool](https://github.com/Julius166083/Zcamp/blob/master/week_7_project/data_lake_ingestion/Documentations/README.md) will be used for visualization
 ### Acknowledgement
 I would like to thank a team of instructors at Data Talk Club (DTC) that have sacrificed time for this community learning off their busy schedules these include:
    * Alexey Grigorev: [linkedin](https://linkedin.com/in/agrigorev) DTC leader
