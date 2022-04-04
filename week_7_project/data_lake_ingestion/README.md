@@ -39,48 +39,93 @@ Port:- "8888:8888"
 References:
 https://hub.docker.com/r/jupyter/all-spark-notebook
 
+##### Requirements
+Installing additional support packages, use one ot the following approaches
+* create a requirement.txt file and list the packegaes you need to install such as pyarrow, spark-bigquery-with- dependencies_2.12-0.24.0.jar, gcs-connector-hadoop3-latest.jar and thereafter call the requirements.txt file in Dockerfile, as 
+shown in my repo.
+* You can directly put the additional packeages to install in the Dockerfile, like shown in my Dockerfile
 
+    ADD https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar $SPARK_HOME/jars
+    RUN chmod 774 $SPARK_HOME/jars/gcs-connector-hadoop3-latest.jar
+* use the _PIP_ADDITIONAL_REQUIREMENTS: feature in docker-compose.yaml file to list support packages to be installed as shown 
+
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- apache-airflow-providers-apache-spark kaggle dbt-
+    bigquery==1.0.0}
+    
+* usefull links for these packages include;
+  gcs-connector-hadoop3-latest.jar:https://storage.googleapis.com/hadoop-lib/gcs/gcs-connector-hadoop3-latest.jar 
+
+  spark-bigquery-latest_2.12.jarhttps://storage.googleapis.com/spark-lib/bigquery/spark-bigquery-latest_2.12.jar 
+
+  spark-bigquery-with-dependencies_2.12-0.24.0.jarhttps://storage.googleapis.com/spark-lib/bigquery/spark-bigquery-with-
+  dependencies_2.12-0.24.0.jar
+
+ 
 ### (B)Apache Airflow
-To be consistent, rename your gcp-service-accounts-credentials file to google_credentials.json & store it in your $HOME directory
+##### Airflow Setup
+* Rename your gcp-service-accounts-credentials file to google_credentials.json & store it in your $HOME directory
 
     cd ~ && mkdir -p ~/.google/credentials/
     mv <path/to/your/service-account-authkeys>.json ~/.google/credentials/google_credentials.json
-    
-##### Airflow Setup
-* Create a new sub-directory called airflow in your project dir as shown mine was in 
 
-* Set the Airflow user:  AIRFLOW_UID=50000
+* Create a ".env" file and Set the Airflow user-id, To get rid of the warning ("AIRFLOW_UID is not set"), you can create .env 
+  file with this content:
+  
+            AIRFLOW_UID=50000
 
-On Linux, the quick-start needs to know your host user-id and needs to have group id set to 0. Otherwise the files created in dags, logs and plugins will be created with root user. You have to make sure to configure them for the docker-compose:
-
+* On Linux, the quick-start needs to know your host user-id and needs to have group id set to 0. Otherwise the files created in 
+  dags, logs and plugins will be created with root user. You have to make sure to configure them for the docker-compose:
+  
             mkdir -p ./dags ./logs ./plugins
             echo -e "AIRFLOW_UID=$(id -u)" > .env
-
-To get rid of the warning ("AIRFLOW_UID is not set"), you can create .env file with this content:
-
-            AIRFLOW_UID=50000
+            
+* Create a script to handle GCP authentication, in my repo "entrypoint.sh" in the scripts folder was created as shown and 
+  and thereafter called in the Dockerfile
+* To install additiona requirement packages choose one of the folowing ways;
+   * create a requirement.txt file and list the packegaes you need to install such as pyarrow, spark-bigquery-with- 
+     dependencies_2.12-0.24.0.jar, gcs-connector-hadoop3-latest.jar and thereafter call the requirements.txt file in Dockerfile, 
+     as shown in my repo.
+   * You can directly put the additional packeages to install in the Dockerfile, like shown in my Dockerfile
+   * use the _PIP_ADDITIONAL_REQUIREMENTS: feature in docker-compose.yaml file to list support packages to be installed as shown 
 * Import the official docker-compose.yaml setup file from the latest Airflow version:
 
             curl -LfO 'https://airflow.apache.org/docs/apache-airflow/stable/docker-compose.yaml'
             
-* Docker Build:
-  Create a <Dockerfile> pointing to Airflow version you've just downloaded, such as apache/airflow:2.2.3, as the base image,
+* Create a Dockerfile pointing to Airflow version you've just downloaded, such as apache/airflow:2.2.3, as the base image,
   And customize this Dockerfile by:
   * Adding your custom packages to be installed. The one we'll need the most is gcloud to connect with the GCS 
     bucket/Data Lake.
   * Also, integrating requirements.txt to install libraries via pip install
 * Docker Compose:
-Back in your docker-compose.yaml:
+  Back in your docker-compose.yaml:
+  In x-airflow-common:
+  Remove the image tag, to replace it with your build from your Dockerfile, as shown
+  Mount your google_credentials in volumes section as read-only
+  Set environment variables: GCP_PROJECT_ID, GCP_GCS_BUCKET, GOOGLE_APPLICATION_CREDENTIALS & AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT,   as per your config.
+  Change AIRFLOW__CORE__LOAD_EXAMPLES to false (optional)
+  Kindly refer to my created samples of docker-compose.yaml and Dockerfile in my repo here
+  
+### (C) Docker builing
+* Use the following docker compose commands to bring up all the docker containers of airflow and spark
 
-In x-airflow-common:
-Remove the image tag, to replace it with your build from your Dockerfile, as shown
-Mount your google_credentials in volumes section as read-only
-Set environment variables: GCP_PROJECT_ID, GCP_GCS_BUCKET, GOOGLE_APPLICATION_CREDENTIALS & AIRFLOW_CONN_GOOGLE_CLOUD_DEFAULT, as per your config.
-Change AIRFLOW__CORE__LOAD_EXAMPLES to false (optional)
-Kindly refer to my created samples of docker-compose.yaml and Dockerfile in my repo here
+              docker-compose build 
+              docker-compose up
+              
+* when all is read and you want to stop the containers use
+             docker-compose down --remove-orphans
+             
+* Accessing spark , airflow and jupyter, if your on a local machine access their GUIs at 
+        Jupyter : https://localhost:8888
+        Spark   :https://localhost:8081
+        Airflow : https://localhost:8080
+  If your using a google remote VM instance, do prot forwarding in visual studio, go to the terminal tab, click new terminal
+  and when it opens up click, ports tab and then add ports to forward traffic to, thereafter access the services locally.
+       Jupyter : https://localhost:8888
+        Spark   :https://localhost:8081
+        Airflow : https://localhost:8080, password=airflow, username=airflow
 
-Problems
-File /.google/credentials/google_credentials.json was not found
+##### troubleshooting Problems
+"File /.google/credentials/google_credentials.json was not found"
 First, make sure you have your credentials in your $HOME/.google/credentials. Maybe you missed the step and didn't copy the your JSON with credentials there? Also, make sure the file-name is google_credentials.json.
 
 Second, check that docker-compose can correctly map this directory to airflow worker.
@@ -101,7 +146,7 @@ If it's empty, docker-compose couldn't map the folder with credentials. In this 
     - ./plugins:/opt/airflow/plugins
     
     # here: ----------------------------
-    - c:/Users/alexe/.google/credentials/:/.google/credentials:ro
+    - c:/home/user-name/.google/credentials/:/.google/credentials:ro
     # -----------------------------------
     
 Airflow image to be used in the docker containers is got from the following link, [docker pull apache/airflow:2.2.4-python3.9](https://hub.docker.com/layers/airflow/apache/airflow/2.2.4-python3.9/images/sha256-66b6de33ec0d0147ff1802a5e1fd82eedbe950fa3293f3c2cd7d7e9c2079668b?context=explore)
