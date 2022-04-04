@@ -95,7 +95,7 @@ This will consist of workings to show how all set objectives were achieved, deta
    * Technologies:Covers only those used here which include:
       * Cloud:Google cloud platform (GCP)
       * containerization: Docker
-      * Data analysis and exploartion: Sql & python
+      * Data analysis and exploartion: SQL & python
       * Infrastructure as code (IaC): Terraform
       * Workflow orchestration: Airflow
       * Data Wareshouse: BigQuery
